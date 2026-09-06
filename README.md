@@ -1,4 +1,4 @@
----
+
 
 # 1. HERO SECTION
 
@@ -8,10 +8,7 @@ An end-to-end AI-driven NSE sectoral index analysis, forecasting, and health cla
 
 `Python` `FastAPI` `React` `Vite` `scikit-learn` `Machine Learning`
 
-* **Live Demo**: `Not provided`
 * **GitHub Repository**: [Ashu4495/AI-Based-Sector-Performance-Analysis](https://github.com/Ashu4495/AI-Based-Sector-Performance-Analysis)
-* **Documentation**: `Not provided`
-* **Demo Video**: `Not provided`
 
 ---
 
