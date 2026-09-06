@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "serve -s dist -l tcp://0.0.0.0:$PORT",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -15,6 +16,7 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "recharts": "^3.10.1",
+    "serve": "^14.2.6",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
