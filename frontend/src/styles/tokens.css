@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #0F1B2B;
+  --bg-surface: #16233A;
+  --bg-surface-hover: #1C2D4A;
+  --border-subtle: #23344F;
+  --text-primary: #E7ECF2;
+  --text-muted: #8FA0B8;
+  --accent-brand: #3FA796;
+  --accent-brand-subtle: rgba(63, 167, 150, 0.15);
+  
+  --signal-buy: #4E9F6E;
+  --signal-buy-bg: rgba(78, 159, 110, 0.15);
+  --signal-neutral: #C99A3E;
+  --signal-neutral-bg: rgba(201, 154, 62, 0.15);
+  --signal-avoid: #C1503F;
+  --signal-avoid-bg: rgba(193, 80, 63, 0.15);
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+[data-theme="light"] {
+  --bg-base: #EEF0EC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #F4F6F3;
+  --border-subtle: #D8DCD5;
+  --text-primary: #1A2330;
+  --text-muted: #5B6B7F;
+  --accent-brand: #1F6F63;
+  --accent-brand-subtle: rgba(31, 111, 99, 0.12);
+
+  --signal-buy: #2F7D52;
+  --signal-buy-bg: rgba(47, 125, 82, 0.12);
+  --signal-neutral: #9C6B1F;
+  --signal-neutral-bg: rgba(156, 107, 31, 0.12);
+  --signal-avoid: #A13D2E;
+  --signal-avoid-bg: rgba(161, 61, 46, 0.12);
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Custom utilities for strict token application */
+.bg-base { background-color: var(--bg-base); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-surface-hover:hover { background-color: var(--bg-surface-hover); }
+.border-subtle { border-color: var(--border-subtle); }
+.text-primary { color: var(--text-primary); }
+.text-muted { color: var(--text-muted); }
+.text-brand { color: var(--accent-brand); }
+.bg-brand-subtle { background-color: var(--accent-brand-subtle); }
+
+.text-signal-buy { color: var(--signal-buy); }
+.bg-signal-buy { background-color: var(--signal-buy-bg); }
+.border-signal-buy { border-color: var(--signal-buy); }
+
+.text-signal-neutral { color: var(--signal-neutral); }
+.bg-signal-neutral { background-color: var(--signal-neutral-bg); }
+.border-signal-neutral { border-color: var(--signal-neutral); }
+
+.text-signal-avoid { color: var(--signal-avoid); }
+.bg-signal-avoid { background-color: var(--signal-avoid-bg); }
+.border-signal-avoid { border-color: var(--signal-avoid); }
+
+/* Continuous ticker animation */
+@keyframes ticker-slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker-slide 35s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker {
+    animation: none;
+    overflow-x: auto;
+  }
+}
