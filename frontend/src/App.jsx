@@ -1,122 +1,127 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import { api } from './api/client';
+import Navbar from './components/Navbar';
+import Landing from './pages/Landing';
+import Dashboard from './pages/Dashboard';
+import SectorDetail from './pages/SectorDetail';
+import Backtest from './pages/Backtest';
+import { RefreshCw, AlertCircle } from 'lucide-react';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [activePage, setActivePage] = useState('landing');
+  const [selectedSector, setSelectedSector] = useState('IT');
+  const [sectors, setSectors] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const fetchSectors = () => {
+    setLoading(true);
+    setError(null);
+    api
+      .getSectors()
+      .then((res) => {
+        setSectors(res.sectors || []);
+        if (res.sectors && res.sectors.length > 0 && !selectedSector) {
+          setSelectedSector(res.sectors[0].sector);
+        }
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message || 'Failed to fetch sectors from SectorAI backend');
+        setLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    fetchSectors();
+  }, []);
+
+  const handleSelectSector = (sectorKey) => {
+    setSelectedSector(sectorKey);
+    setActivePage('detail');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="min-h-screen bg-base text-primary flex flex-col font-body">
+      {/* Top Navigation */}
+      <Navbar
+        activePage={activePage}
+        setActivePage={(page) => {
+          setActivePage(page);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        selectedSector={selectedSector}
+      />
 
-      <div className="ticks"></div>
+      {/* Main Content Area */}
+      <main className="flex-1 w-full">
+        {loading ? (
+          <div className="min-h-[60vh] flex flex-col items-center justify-center space-y-3">
+            <RefreshCw className="w-8 h-8 text-brand animate-spin" />
+            <div className="font-mono text-xs text-muted">Connecting to SectorAI Engine...</div>
+          </div>
+        ) : error ? (
+          <div className="max-w-2xl mx-auto px-4 py-16 text-center">
+            <div className="bg-surface border border-signal-avoid/40 rounded p-8 space-y-4 shadow-sm">
+              <AlertCircle className="w-10 h-10 text-signal-avoid mx-auto" />
+              <h2 className="font-display text-xl font-bold text-primary">Backend API Connection Error</h2>
+              <p className="text-xs font-mono text-muted leading-relaxed">{error}</p>
+              <button
+                onClick={fetchSectors}
+                className="px-4 py-2 rounded bg-brand-subtle text-brand border border-brand/40 font-mono text-xs font-semibold hover:bg-brand-subtle/80 cursor-pointer"
+              >
+                Retry Connection
+              </button>
+            </div>
+          </div>
+        ) : (
+          <>
+            {activePage === 'landing' && (
+              <Landing
+                sectors={sectors}
+                onExplore={() => setActivePage('dashboard')}
+                onSelectSector={handleSelectSector}
+              />
+            )}
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+            {activePage === 'dashboard' && (
+              <Dashboard
+                sectors={sectors}
+                onSelectSector={handleSelectSector}
+                onOpenBacktest={() => setActivePage('backtest')}
+                selectedSector={selectedSector}
+              />
+            )}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+            {activePage === 'detail' && (
+              <SectorDetail
+                sectorKey={selectedSector}
+                onBack={() => setActivePage('dashboard')}
+                onSelectSector={(s) => setSelectedSector(s)}
+                allSectors={sectors}
+              />
+            )}
+
+            {activePage === 'backtest' && <Backtest />}
+          </>
+        )}
+      </main>
+
+      {/* Footer */}
+      <footer className="w-full bg-surface border-t border-subtle py-6 mt-12 text-xs font-mono text-muted">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <span className="font-display font-bold text-primary text-sm">SectorAI</span>
+            <span>· NSE Sector Health & Rotation MVP</span>
+          </div>
+          <div className="flex items-center gap-4 text-[11px]">
+            <span>Data: yfinance</span>
+            <span>Models: Ridge Regression + RandomForest + TreeSHAP</span>
+            <span>Labels Only (No Numeric Scores)</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
 }
-
-export default App

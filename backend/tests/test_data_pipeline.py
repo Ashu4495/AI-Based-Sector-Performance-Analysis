@@ -41,8 +41,6 @@ def test_clean_and_align_logic():
     })
     
     # Create sector data with a 1-day gap (should fill) and a 4-day gap (should not fill)
-    # Day 0, 1, 3 (day 2 missing -> gap=1 <= 2, fills)
-    # Day 8, 9 (days 4, 5, 6, 7 missing -> gap=4 > 2, does not fill)
     sec_dates = [dates[0], dates[1], dates[3], dates[8], dates[9]]
     sec_df = pd.DataFrame({
         "Date": sec_dates,
@@ -77,7 +75,7 @@ def test_full_data_pipeline():
     """Runs fetch and clean for all 8 sectors + benchmark and checks storage output."""
     raw_df, fetch_meta = fetch_all_sectors(lookback_years=5)
     assert not raw_df.empty, "Raw sector DataFrame is empty"
-    assert len(fetch_meta["sectors_fetched"]) >= 9, "Not all sectors were fetched"
+    assert len(raw_df["Sector"].unique()) >= 9, "Not all sectors are represented in dataset"
     
     clean_df, stats = clean_and_align_sectors(raw_df)
     assert not clean_df.empty, "Clean sector DataFrame is empty"

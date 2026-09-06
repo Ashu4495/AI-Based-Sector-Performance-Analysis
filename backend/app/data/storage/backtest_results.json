@@ -1,0 +1,4681 @@
+{
+  "strategy_name": "AI Sector Rotation Strategy (Monthly Top Health)",
+  "benchmark_name": "NIFTY 50 Buy-and-Hold",
+  "start_date": "2019-10-29",
+  "end_date": "2026-09-04",
+  "total_trading_days": 1697,
+  "rebalance_frequency": "Every 21 Trading Days (~1 Month)",
+  "initial_capital": 100000.0,
+  "metrics": {
+    "strategy": {
+      "final_equity": 1768536.42,
+      "cumulative_return_pct": 1668.54,
+      "cagr_pct": 53.2,
+      "annualized_volatility_pct": 26.39,
+      "sharpe_ratio": 1.77,
+      "max_drawdown_pct": -36.6
+    },
+    "benchmark": {
+      "final_equity": 202748.83,
+      "cumulative_return_pct": 102.75,
+      "cagr_pct": 11.07,
+      "annualized_volatility_pct": 17.63,
+      "sharpe_ratio": 0.26,
+      "max_drawdown_pct": -38.44
+    },
+    "comparison": {
+      "excess_cagr_pct": 42.14,
+      "excess_total_return_pct": 1565.79,
+      "monthly_win_rate_pct": 65.0,
+      "total_rebalances": 81
+    }
+  },
+  "trades_log": [
+    {
+      "rebalance_date": "2025-09-04",
+      "selected_sector": "METAL",
+      "selected_name": "NIFTY METAL",
+      "health_label": "Strong Buy",
+      "entry_price": 9616.35,
+      "strategy_equity": 1062097.04,
+      "benchmark_equity": 209683.26
+    },
+    {
+      "rebalance_date": "2025-10-06",
+      "selected_sector": "METAL",
+      "selected_name": "NIFTY METAL",
+      "health_label": "Buy",
+      "entry_price": 10185.5,
+      "strategy_equity": 1128030.74,
+      "benchmark_equity": 211203.59
+    },
+    {
+      "rebalance_date": "2025-11-06",
+      "selected_sector": "BANK",
+      "selected_name": "NIFTY BANK",
+      "health_label": "Buy",
+      "entry_price": 57554.25,
+      "strategy_equity": 1152392.34,
+      "benchmark_equity": 217171.26
+    },
+    {
+      "rebalance_date": "2025-12-05",
+      "selected_sector": "IT",
+      "selected_name": "NIFTY IT",
+      "health_label": "Buy",
+      "entry_price": 38703.65,
+      "strategy_equity": 1181520.45,
+      "benchmark_equity": 220871.15
+    },
+    {
+      "rebalance_date": "2026-01-06",
+      "selected_sector": "METAL",
+      "selected_name": "NIFTY METAL",
+      "health_label": "Buy",
+      "entry_price": 11524.05,
+      "strategy_equity": 1163375.74,
+      "benchmark_equity": 222708.37
+    },
+    {
+      "rebalance_date": "2026-02-06",
+      "selected_sector": "METAL",
+      "selected_name": "NIFTY METAL",
+      "health_label": "Strong Buy",
+      "entry_price": 11943.15,
+      "strategy_equity": 1206951.24,
+      "benchmark_equity": 217554.32
+    },
+    {
+      "rebalance_date": "2026-03-10",
+      "selected_sector": "METAL",
+      "selected_name": "NIFTY METAL",
+      "health_label": "Strong Buy",
+      "entry_price": 11868.5,
+      "strategy_equity": 1183422.07,
+      "benchmark_equity": 203854.73
+    },
+    {
+      "rebalance_date": "2026-04-13",
+      "selected_sector": "METAL",
+      "selected_name": "NIFTY METAL",
+      "health_label": "Strong Buy",
+      "entry_price": 12329.3,
+      "strategy_equity": 1251012.7,
+      "benchmark_equity": 204046.04
+    },
+    {
+      "rebalance_date": "2026-05-14",
+      "selected_sector": "PHARMA",
+      "selected_name": "NIFTY PHARMA",
+      "health_label": "Neutral",
+      "entry_price": 24551.05,
+      "strategy_equity": 1345615.13,
+      "benchmark_equity": 198633.23
+    },
+    {
+      "rebalance_date": "2026-06-15",
+      "selected_sector": "REALTY",
+      "selected_name": "NIFTY REALTY",
+      "health_label": "Strong Buy",
+      "entry_price": 800.05,
+      "strategy_equity": 1372869.75,
+      "benchmark_equity": 200417.42
+    },
+    {
+      "rebalance_date": "2026-07-15",
+      "selected_sector": "IT",
+      "selected_name": "NIFTY IT",
+      "health_label": "Strong Buy",
+      "entry_price": 28532.25,
+      "strategy_equity": 1638756.32,
+      "benchmark_equity": 204058.35
+    },
+    {
+      "rebalance_date": "2026-08-13",
+      "selected_sector": "PHARMA",
+      "selected_name": "NIFTY PHARMA",
+      "health_label": "Neutral",
+      "entry_price": 26686.8,
+      "strategy_equity": 1787532.21,
+      "benchmark_equity": 207315.36
+    }
+  ],
+  "equity_curve": [
+    {
+      "date": "2019-10-29",
+      "strategy": 100000.0,
+      "benchmark": 100000.0,
+      "strategy_return_pct": 0.0,
+      "benchmark_return_pct": 0.0,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2019-11-01",
+      "strategy": 99327.2,
+      "benchmark": 100880.22,
+      "strategy_return_pct": -0.67,
+      "benchmark_return_pct": 0.88,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2019-11-06",
+      "strategy": 97740.76,
+      "benchmark": 101520.34,
+      "strategy_return_pct": -2.26,
+      "benchmark_return_pct": 1.52,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2019-11-11",
+      "strategy": 96559.07,
+      "benchmark": 101074.08,
+      "strategy_return_pct": -3.44,
+      "benchmark_return_pct": 1.07,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2019-11-15",
+      "strategy": 96498.71,
+      "benchmark": 100921.37,
+      "strategy_return_pct": -3.5,
+      "benchmark_return_pct": 0.92,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2019-11-20",
+      "strategy": 95669.1,
+      "benchmark": 101800.74,
+      "strategy_return_pct": -4.33,
+      "benchmark_return_pct": 1.8,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2019-11-25",
+      "strategy": 96745.47,
+      "benchmark": 102434.07,
+      "strategy_return_pct": -3.25,
+      "benchmark_return_pct": 2.43,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2019-11-28",
+      "strategy": 97402.36,
+      "benchmark": 103090.74,
+      "strategy_return_pct": -2.6,
+      "benchmark_return_pct": 3.09,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2019-12-03",
+      "strategy": 94708.79,
+      "benchmark": 101759.17,
+      "strategy_return_pct": -5.29,
+      "benchmark_return_pct": 1.76,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2019-12-06",
+      "strategy": 93681.03,
+      "benchmark": 101142.38,
+      "strategy_return_pct": -6.32,
+      "benchmark_return_pct": 1.14,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2019-12-11",
+      "strategy": 93802.3,
+      "benchmark": 101046.09,
+      "strategy_return_pct": -6.2,
+      "benchmark_return_pct": 1.05,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2019-12-16",
+      "strategy": 94485.11,
+      "benchmark": 102266.09,
+      "strategy_return_pct": -5.51,
+      "benchmark_return_pct": 2.27,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2019-12-19",
+      "strategy": 95040.77,
+      "benchmark": 104011.68,
+      "strategy_return_pct": -4.96,
+      "benchmark_return_pct": 4.01,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2019-12-24",
+      "strategy": 95049.6,
+      "benchmark": 103628.62,
+      "strategy_return_pct": -4.95,
+      "benchmark_return_pct": 3.63,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2019-12-30",
+      "strategy": 95094.18,
+      "benchmark": 103979.01,
+      "strategy_return_pct": -4.91,
+      "benchmark_return_pct": 3.98,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-01-02",
+      "strategy": 96553.71,
+      "benchmark": 104202.57,
+      "strategy_return_pct": -3.45,
+      "benchmark_return_pct": 4.2,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-01-07",
+      "strategy": 95607.41,
+      "benchmark": 102257.61,
+      "strategy_return_pct": -4.39,
+      "benchmark_return_pct": 2.26,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-01-10",
+      "strategy": 99649.2,
+      "benchmark": 103987.07,
+      "strategy_return_pct": -0.35,
+      "benchmark_return_pct": 3.99,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-01-15",
+      "strategy": 102937.16,
+      "benchmark": 104720.94,
+      "strategy_return_pct": 2.94,
+      "benchmark_return_pct": 4.72,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-01-20",
+      "strategy": 104508.96,
+      "benchmark": 103713.46,
+      "strategy_return_pct": 4.51,
+      "benchmark_return_pct": 3.71,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-01-23",
+      "strategy": 105102.4,
+      "benchmark": 103338.47,
+      "strategy_return_pct": 5.1,
+      "benchmark_return_pct": 3.34,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-01-28",
+      "strategy": 104878.32,
+      "benchmark": 102281.78,
+      "strategy_return_pct": 4.88,
+      "benchmark_return_pct": 2.28,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-01-31",
+      "strategy": 101370.23,
+      "benchmark": 101486.83,
+      "strategy_return_pct": 1.37,
+      "benchmark_return_pct": 1.49,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-02-05",
+      "strategy": 101208.31,
+      "benchmark": 102564.73,
+      "strategy_return_pct": 1.21,
+      "benchmark_return_pct": 2.56,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-02-10",
+      "strategy": 102897.9,
+      "benchmark": 102075.62,
+      "strategy_return_pct": 2.9,
+      "benchmark_return_pct": 2.08,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-02-13",
+      "strategy": 103825.21,
+      "benchmark": 103290.11,
+      "strategy_return_pct": 3.83,
+      "benchmark_return_pct": 3.29,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-02-18",
+      "strategy": 102113.82,
+      "benchmark": 101744.74,
+      "strategy_return_pct": 2.11,
+      "benchmark_return_pct": 1.74,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-02-24",
+      "strategy": 101083.13,
+      "benchmark": 100361.0,
+      "strategy_return_pct": 1.08,
+      "benchmark_return_pct": 0.36,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-02-27",
+      "strategy": 96394.86,
+      "benchmark": 98697.28,
+      "strategy_return_pct": -3.61,
+      "benchmark_return_pct": -1.3,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-03-03",
+      "strategy": 93999.9,
+      "benchmark": 95897.55,
+      "strategy_return_pct": -6.0,
+      "benchmark_return_pct": -4.1,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-03-06",
+      "strategy": 93642.99,
+      "benchmark": 93234.84,
+      "strategy_return_pct": -6.36,
+      "benchmark_return_pct": -6.77,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-03-12",
+      "strategy": 80020.26,
+      "benchmark": 81363.14,
+      "strategy_return_pct": -19.98,
+      "benchmark_return_pct": -18.64,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-03-17",
+      "strategy": 72334.41,
+      "benchmark": 76076.73,
+      "strategy_return_pct": -27.67,
+      "benchmark_return_pct": -23.92,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-03-20",
+      "strategy": 73913.91,
+      "benchmark": 74196.67,
+      "strategy_return_pct": -26.09,
+      "benchmark_return_pct": -25.8,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-03-25",
+      "strategy": 73136.11,
+      "benchmark": 70568.9,
+      "strategy_return_pct": -26.86,
+      "benchmark_return_pct": -29.43,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-03-30",
+      "strategy": 76058.25,
+      "benchmark": 70257.11,
+      "strategy_return_pct": -23.94,
+      "benchmark_return_pct": -29.74,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-04-03",
+      "strategy": 81193.51,
+      "benchmark": 68583.21,
+      "strategy_return_pct": -18.81,
+      "benchmark_return_pct": -31.42,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-04-09",
+      "strategy": 97063.06,
+      "benchmark": 77305.65,
+      "strategy_return_pct": -2.94,
+      "benchmark_return_pct": -22.69,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-04-16",
+      "strategy": 101462.1,
+      "benchmark": 76295.19,
+      "strategy_return_pct": 1.46,
+      "benchmark_return_pct": -23.7,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-04-21",
+      "strategy": 103473.3,
+      "benchmark": 76198.9,
+      "strategy_return_pct": 3.47,
+      "benchmark_return_pct": -23.8,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-04-24",
+      "strategy": 104982.11,
+      "benchmark": 77666.22,
+      "strategy_return_pct": 4.98,
+      "benchmark_return_pct": -22.33,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-04-29",
+      "strategy": 103515.21,
+      "benchmark": 81050.92,
+      "strategy_return_pct": 3.52,
+      "benchmark_return_pct": -18.95,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-05-05",
+      "strategy": 101265.78,
+      "benchmark": 78100.59,
+      "strategy_return_pct": 1.27,
+      "benchmark_return_pct": -21.9,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-05-08",
+      "strategy": 103050.87,
+      "benchmark": 78490.01,
+      "strategy_return_pct": 3.05,
+      "benchmark_return_pct": -21.51,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-05-13",
+      "strategy": 100893.54,
+      "benchmark": 79610.33,
+      "strategy_return_pct": 0.89,
+      "benchmark_return_pct": -20.39,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-05-18",
+      "strategy": 100285.83,
+      "benchmark": 74856.73,
+      "strategy_return_pct": 0.29,
+      "benchmark_return_pct": -25.14,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-05-21",
+      "strategy": 105005.27,
+      "benchmark": 77257.71,
+      "strategy_return_pct": 5.01,
+      "benchmark_return_pct": -22.74,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-05-27",
+      "strategy": 104378.26,
+      "benchmark": 79028.33,
+      "strategy_return_pct": 4.38,
+      "benchmark_return_pct": -20.97,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-06-01",
+      "strategy": 108110.58,
+      "benchmark": 83365.37,
+      "strategy_return_pct": 8.11,
+      "benchmark_return_pct": -16.63,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2020-06-04",
+      "strategy": 109006.46,
+      "benchmark": 85087.19,
+      "strategy_return_pct": 9.01,
+      "benchmark_return_pct": -14.91,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2020-06-09",
+      "strategy": 110117.23,
+      "benchmark": 85236.1,
+      "strategy_return_pct": 10.12,
+      "benchmark_return_pct": -14.76,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2020-06-12",
+      "strategy": 109810.86,
+      "benchmark": 84610.4,
+      "strategy_return_pct": 9.81,
+      "benchmark_return_pct": -15.39,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2020-06-17",
+      "strategy": 108875.04,
+      "benchmark": 83831.99,
+      "strategy_return_pct": 8.88,
+      "benchmark_return_pct": -16.17,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2020-06-22",
+      "strategy": 112651.81,
+      "benchmark": 87480.54,
+      "strategy_return_pct": 12.65,
+      "benchmark_return_pct": -12.52,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2020-06-25",
+      "strategy": 112798.29,
+      "benchmark": 87291.35,
+      "strategy_return_pct": 12.8,
+      "benchmark_return_pct": -12.71,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2020-06-30",
+      "strategy": 112485.23,
+      "benchmark": 87403.33,
+      "strategy_return_pct": 12.49,
+      "benchmark_return_pct": -12.6,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2020-07-03",
+      "strategy": 116784.84,
+      "benchmark": 89993.09,
+      "strategy_return_pct": 16.78,
+      "benchmark_return_pct": -10.01,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2020-07-08",
+      "strategy": 115071.54,
+      "benchmark": 90827.92,
+      "strategy_return_pct": 15.07,
+      "benchmark_return_pct": -9.17,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2020-07-13",
+      "strategy": 117291.24,
+      "benchmark": 91650.45,
+      "strategy_return_pct": 17.29,
+      "benchmark_return_pct": -8.35,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2020-07-16",
+      "strategy": 113376.03,
+      "benchmark": 91118.07,
+      "strategy_return_pct": 13.38,
+      "benchmark_return_pct": -8.88,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2020-07-21",
+      "strategy": 122210.96,
+      "benchmark": 94700.88,
+      "strategy_return_pct": 22.21,
+      "benchmark_return_pct": -5.3,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2020-07-24",
+      "strategy": 125677.88,
+      "benchmark": 94971.52,
+      "strategy_return_pct": 25.68,
+      "benchmark_return_pct": -5.03,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2020-07-29",
+      "strategy": 124426.31,
+      "benchmark": 95045.33,
+      "strategy_return_pct": 24.43,
+      "benchmark_return_pct": -4.95,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2020-08-03",
+      "strategy": 121538.09,
+      "benchmark": 92404.67,
+      "strategy_return_pct": 21.54,
+      "benchmark_return_pct": -7.6,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-08-06",
+      "strategy": 129350.72,
+      "benchmark": 95022.43,
+      "strategy_return_pct": 29.35,
+      "benchmark_return_pct": -4.98,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-08-11",
+      "strategy": 133629.05,
+      "benchmark": 96060.44,
+      "strategy_return_pct": 33.63,
+      "benchmark_return_pct": -3.94,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-08-14",
+      "strategy": 135610.4,
+      "benchmark": 94837.9,
+      "strategy_return_pct": 35.61,
+      "benchmark_return_pct": -5.16,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-08-19",
+      "strategy": 141661.51,
+      "benchmark": 96789.23,
+      "strategy_return_pct": 41.66,
+      "benchmark_return_pct": -3.21,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-08-24",
+      "strategy": 142391.49,
+      "benchmark": 97281.72,
+      "strategy_return_pct": 42.39,
+      "benchmark_return_pct": -2.72,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-08-27",
+      "strategy": 142670.51,
+      "benchmark": 98069.04,
+      "strategy_return_pct": 42.67,
+      "benchmark_return_pct": -1.93,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-09-01",
+      "strategy": 137516.61,
+      "benchmark": 97313.96,
+      "strategy_return_pct": 37.52,
+      "benchmark_return_pct": -2.69,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-09-04",
+      "strategy": 134790.78,
+      "benchmark": 96156.73,
+      "strategy_return_pct": 34.79,
+      "benchmark_return_pct": -3.84,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-09-09",
+      "strategy": 129277.86,
+      "benchmark": 95682.9,
+      "strategy_return_pct": 29.28,
+      "benchmark_return_pct": -4.32,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-09-14",
+      "strategy": 136567.16,
+      "benchmark": 97057.74,
+      "strategy_return_pct": 36.57,
+      "benchmark_return_pct": -2.94,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-09-17",
+      "strategy": 136291.52,
+      "benchmark": 97702.95,
+      "strategy_return_pct": 36.29,
+      "benchmark_return_pct": -2.3,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-09-22",
+      "strategy": 128634.69,
+      "benchmark": 94627.92,
+      "strategy_return_pct": 28.63,
+      "benchmark_return_pct": -5.37,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-09-25",
+      "strategy": 128267.16,
+      "benchmark": 93750.67,
+      "strategy_return_pct": 28.27,
+      "benchmark_return_pct": -6.25,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2020-09-30",
+      "strategy": 131351.26,
+      "benchmark": 95424.56,
+      "strategy_return_pct": 31.35,
+      "benchmark_return_pct": -4.58,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-10-06",
+      "strategy": 137575.38,
+      "benchmark": 98944.17,
+      "strategy_return_pct": 37.58,
+      "benchmark_return_pct": -1.06,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-10-09",
+      "strategy": 143769.87,
+      "benchmark": 101080.45,
+      "strategy_return_pct": 43.77,
+      "benchmark_return_pct": 1.08,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-10-14",
+      "strategy": 146182.1,
+      "benchmark": 101562.76,
+      "strategy_return_pct": 46.18,
+      "benchmark_return_pct": 1.56,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-10-19",
+      "strategy": 140835.24,
+      "benchmark": 100731.33,
+      "strategy_return_pct": 40.84,
+      "benchmark_return_pct": 0.73,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-10-22",
+      "strategy": 140977.45,
+      "benchmark": 100929.85,
+      "strategy_return_pct": 40.98,
+      "benchmark_return_pct": 0.93,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-10-27",
+      "strategy": 138409.19,
+      "benchmark": 100870.04,
+      "strategy_return_pct": 38.41,
+      "benchmark_return_pct": 0.87,
+      "holding": "IT"
+    },
+    {
+      "date": "2020-10-30",
+      "strategy": 136354.8,
+      "benchmark": 98774.49,
+      "strategy_return_pct": 36.35,
+      "benchmark_return_pct": -1.23,
+      "holding": "BANK"
+    },
+    {
+      "date": "2020-11-04",
+      "strategy": 147027.15,
+      "benchmark": 101032.09,
+      "strategy_return_pct": 47.03,
+      "benchmark_return_pct": 1.03,
+      "holding": "BANK"
+    },
+    {
+      "date": "2020-11-09",
+      "strategy": 157082.22,
+      "benchmark": 105719.94,
+      "strategy_return_pct": 57.08,
+      "benchmark_return_pct": 5.72,
+      "holding": "BANK"
+    },
+    {
+      "date": "2020-11-12",
+      "strategy": 161330.75,
+      "benchmark": 107669.14,
+      "strategy_return_pct": 61.33,
+      "benchmark_return_pct": 7.67,
+      "holding": "BANK"
+    },
+    {
+      "date": "2020-11-18",
+      "strategy": 169723.09,
+      "benchmark": 109768.52,
+      "strategy_return_pct": 69.72,
+      "benchmark_return_pct": 9.77,
+      "holding": "BANK"
+    },
+    {
+      "date": "2020-11-23",
+      "strategy": 165583.25,
+      "benchmark": 109668.41,
+      "strategy_return_pct": 65.58,
+      "benchmark_return_pct": 9.67,
+      "holding": "BANK"
+    },
+    {
+      "date": "2020-11-26",
+      "strategy": 168581.52,
+      "benchmark": 110182.11,
+      "strategy_return_pct": 68.58,
+      "benchmark_return_pct": 10.18,
+      "holding": "BANK"
+    },
+    {
+      "date": "2020-12-02",
+      "strategy": 174466.69,
+      "benchmark": 111257.46,
+      "strategy_return_pct": 74.47,
+      "benchmark_return_pct": 11.26,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-12-07",
+      "strategy": 180815.72,
+      "benchmark": 113310.6,
+      "strategy_return_pct": 80.82,
+      "benchmark_return_pct": 13.31,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-12-10",
+      "strategy": 178061.62,
+      "benchmark": 114350.32,
+      "strategy_return_pct": 78.06,
+      "benchmark_return_pct": 14.35,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-12-15",
+      "strategy": 183844.37,
+      "benchmark": 115110.06,
+      "strategy_return_pct": 83.84,
+      "benchmark_return_pct": 15.11,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-12-18",
+      "strategy": 183984.52,
+      "benchmark": 116744.93,
+      "strategy_return_pct": 83.98,
+      "benchmark_return_pct": 16.74,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-12-23",
+      "strategy": 179265.65,
+      "benchmark": 115392.15,
+      "strategy_return_pct": 79.27,
+      "benchmark_return_pct": 15.39,
+      "holding": "METAL"
+    },
+    {
+      "date": "2020-12-29",
+      "strategy": 182454.46,
+      "benchmark": 118204.61,
+      "strategy_return_pct": 82.45,
+      "benchmark_return_pct": 18.2,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-01-01",
+      "strategy": 186160.91,
+      "benchmark": 118933.39,
+      "strategy_return_pct": 86.16,
+      "benchmark_return_pct": 18.93,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-01-06",
+      "strategy": 188978.38,
+      "benchmark": 120017.23,
+      "strategy_return_pct": 88.98,
+      "benchmark_return_pct": 20.02,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-01-11",
+      "strategy": 195473.39,
+      "benchmark": 122889.07,
+      "strategy_return_pct": 95.47,
+      "benchmark_return_pct": 22.89,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-01-14",
+      "strategy": 200129.64,
+      "benchmark": 123829.52,
+      "strategy_return_pct": 100.13,
+      "benchmark_return_pct": 23.83,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-01-19",
+      "strategy": 200574.5,
+      "benchmark": 123197.89,
+      "strategy_return_pct": 100.57,
+      "benchmark_return_pct": 23.2,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-01-22",
+      "strategy": 195592.03,
+      "benchmark": 121931.65,
+      "strategy_return_pct": 95.59,
+      "benchmark_return_pct": 21.93,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-01-28",
+      "strategy": 180407.32,
+      "benchmark": 117228.52,
+      "strategy_return_pct": 80.41,
+      "benchmark_return_pct": 17.23,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-02-02",
+      "strategy": 200483.56,
+      "benchmark": 124272.81,
+      "strategy_return_pct": 100.48,
+      "benchmark_return_pct": 24.27,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2021-02-05",
+      "strategy": 202091.98,
+      "benchmark": 126617.8,
+      "strategy_return_pct": 102.09,
+      "benchmark_return_pct": 26.62,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2021-02-10",
+      "strategy": 207498.58,
+      "benchmark": 128164.02,
+      "strategy_return_pct": 107.5,
+      "benchmark_return_pct": 28.16,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2021-02-15",
+      "strategy": 205640.48,
+      "benchmark": 129930.39,
+      "strategy_return_pct": 105.64,
+      "benchmark_return_pct": 29.93,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2021-02-18",
+      "strategy": 204033.95,
+      "benchmark": 128269.65,
+      "strategy_return_pct": 104.03,
+      "benchmark_return_pct": 28.27,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2021-02-23",
+      "strategy": 195601.79,
+      "benchmark": 124781.43,
+      "strategy_return_pct": 95.6,
+      "benchmark_return_pct": 24.78,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2021-02-26",
+      "strategy": 191650.96,
+      "benchmark": 123265.77,
+      "strategy_return_pct": 91.65,
+      "benchmark_return_pct": 23.27,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2021-03-03",
+      "strategy": 209223.91,
+      "benchmark": 129344.14,
+      "strategy_return_pct": 109.22,
+      "benchmark_return_pct": 29.34,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-03-08",
+      "strategy": 201089.2,
+      "benchmark": 126888.87,
+      "strategy_return_pct": 101.09,
+      "benchmark_return_pct": 26.89,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-03-12",
+      "strategy": 197965.22,
+      "benchmark": 127523.05,
+      "strategy_return_pct": 97.97,
+      "benchmark_return_pct": 27.52,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-03-17",
+      "strategy": 193454.52,
+      "benchmark": 124895.97,
+      "strategy_return_pct": 93.45,
+      "benchmark_return_pct": 24.9,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-03-22",
+      "strategy": 199369.97,
+      "benchmark": 125024.08,
+      "strategy_return_pct": 99.37,
+      "benchmark_return_pct": 25.02,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-03-25",
+      "strategy": 191681.18,
+      "benchmark": 121532.9,
+      "strategy_return_pct": 91.68,
+      "benchmark_return_pct": 21.53,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-03-31",
+      "strategy": 205027.67,
+      "benchmark": 124636.36,
+      "strategy_return_pct": 105.03,
+      "benchmark_return_pct": 24.64,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-04-06",
+      "strategy": 220995.53,
+      "benchmark": 124575.27,
+      "strategy_return_pct": 121.0,
+      "benchmark_return_pct": 24.58,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-04-09",
+      "strategy": 230292.69,
+      "benchmark": 125859.33,
+      "strategy_return_pct": 130.29,
+      "benchmark_return_pct": 25.86,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-04-15",
+      "strategy": 226691.89,
+      "benchmark": 123709.48,
+      "strategy_return_pct": 126.69,
+      "benchmark_return_pct": 23.71,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-04-20",
+      "strategy": 226019.13,
+      "benchmark": 121291.11,
+      "strategy_return_pct": 126.02,
+      "benchmark_return_pct": 21.29,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-04-26",
+      "strategy": 233849.69,
+      "benchmark": 122891.19,
+      "strategy_return_pct": 133.85,
+      "benchmark_return_pct": 22.89,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-04-29",
+      "strategy": 250294.38,
+      "benchmark": 126368.8,
+      "strategy_return_pct": 150.29,
+      "benchmark_return_pct": 26.37,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-05-04",
+      "strategy": 253714.78,
+      "benchmark": 122988.76,
+      "strategy_return_pct": 153.71,
+      "benchmark_return_pct": 22.99,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-05-07",
+      "strategy": 275067.11,
+      "benchmark": 125760.07,
+      "strategy_return_pct": 175.07,
+      "benchmark_return_pct": 25.76,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-05-12",
+      "strategy": 272726.71,
+      "benchmark": 124685.56,
+      "strategy_return_pct": 172.73,
+      "benchmark_return_pct": 24.69,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-05-18",
+      "strategy": 272930.32,
+      "benchmark": 128177.59,
+      "strategy_return_pct": 172.93,
+      "benchmark_return_pct": 28.18,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-05-21",
+      "strategy": 262865.04,
+      "benchmark": 128747.72,
+      "strategy_return_pct": 162.87,
+      "benchmark_return_pct": 28.75,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-05-26",
+      "strategy": 257998.65,
+      "benchmark": 129817.98,
+      "strategy_return_pct": 158.0,
+      "benchmark_return_pct": 29.82,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-05-31",
+      "strategy": 260627.74,
+      "benchmark": 132204.96,
+      "strategy_return_pct": 160.63,
+      "benchmark_return_pct": 32.2,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-06-03",
+      "strategy": 271571.96,
+      "benchmark": 133117.42,
+      "strategy_return_pct": 171.57,
+      "benchmark_return_pct": 33.12,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-06-08",
+      "strategy": 276348.14,
+      "benchmark": 133539.5,
+      "strategy_return_pct": 176.35,
+      "benchmark_return_pct": 33.54,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-06-11",
+      "strategy": 277940.37,
+      "benchmark": 134042.18,
+      "strategy_return_pct": 177.94,
+      "benchmark_return_pct": 34.04,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-06-16",
+      "strategy": 273823.88,
+      "benchmark": 133772.38,
+      "strategy_return_pct": 173.82,
+      "benchmark_return_pct": 33.77,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-06-21",
+      "strategy": 273280.2,
+      "benchmark": 133593.8,
+      "strategy_return_pct": 173.28,
+      "benchmark_return_pct": 33.59,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-06-24",
+      "strategy": 268387.01,
+      "benchmark": 133966.67,
+      "strategy_return_pct": 168.39,
+      "benchmark_return_pct": 33.97,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-06-29",
+      "strategy": 268309.36,
+      "benchmark": 133610.34,
+      "strategy_return_pct": 168.31,
+      "benchmark_return_pct": 33.61,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-07-02",
+      "strategy": 267649.16,
+      "benchmark": 133387.64,
+      "strategy_return_pct": 167.65,
+      "benchmark_return_pct": 33.39,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-07-07",
+      "strategy": 279377.27,
+      "benchmark": 134723.45,
+      "strategy_return_pct": 179.38,
+      "benchmark_return_pct": 34.72,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-07-12",
+      "strategy": 294639.32,
+      "benchmark": 133136.5,
+      "strategy_return_pct": 194.64,
+      "benchmark_return_pct": 33.14,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-07-15",
+      "strategy": 305280.03,
+      "benchmark": 135101.41,
+      "strategy_return_pct": 205.28,
+      "benchmark_return_pct": 35.1,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-07-20",
+      "strategy": 302250.92,
+      "benchmark": 132623.22,
+      "strategy_return_pct": 202.25,
+      "benchmark_return_pct": 32.62,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-07-26",
+      "strategy": 308503.33,
+      "benchmark": 134255.13,
+      "strategy_return_pct": 208.5,
+      "benchmark_return_pct": 34.26,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-07-29",
+      "strategy": 308736.33,
+      "benchmark": 133864.86,
+      "strategy_return_pct": 208.74,
+      "benchmark_return_pct": 33.86,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-08-03",
+      "strategy": 325318.78,
+      "benchmark": 136853.79,
+      "strategy_return_pct": 225.32,
+      "benchmark_return_pct": 36.85,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-08-06",
+      "strategy": 313357.68,
+      "benchmark": 137765.4,
+      "strategy_return_pct": 213.36,
+      "benchmark_return_pct": 37.77,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-08-11",
+      "strategy": 305590.73,
+      "benchmark": 138139.12,
+      "strategy_return_pct": 205.59,
+      "benchmark_return_pct": 38.14,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-08-16",
+      "strategy": 305241.21,
+      "benchmark": 140521.44,
+      "strategy_return_pct": 205.24,
+      "benchmark_return_pct": 40.52,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-08-20",
+      "strategy": 290017.98,
+      "benchmark": 139566.56,
+      "strategy_return_pct": 190.02,
+      "benchmark_return_pct": 39.57,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-08-25",
+      "strategy": 290095.65,
+      "benchmark": 141128.89,
+      "strategy_return_pct": 190.1,
+      "benchmark_return_pct": 41.13,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-08-30",
+      "strategy": 298678.12,
+      "benchmark": 143643.56,
+      "strategy_return_pct": 198.68,
+      "benchmark_return_pct": 43.64,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-09-02",
+      "strategy": 321124.63,
+      "benchmark": 146215.07,
+      "strategy_return_pct": 221.12,
+      "benchmark_return_pct": 46.22,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-09-07",
+      "strategy": 326988.67,
+      "benchmark": 147300.6,
+      "strategy_return_pct": 226.99,
+      "benchmark_return_pct": 47.3,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-09-13",
+      "strategy": 326444.97,
+      "benchmark": 147242.91,
+      "strategy_return_pct": 226.44,
+      "benchmark_return_pct": 47.24,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-09-16",
+      "strategy": 328930.41,
+      "benchmark": 149569.23,
+      "strategy_return_pct": 228.93,
+      "benchmark_return_pct": 49.57,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-09-21",
+      "strategy": 325551.78,
+      "benchmark": 148996.56,
+      "strategy_return_pct": 225.55,
+      "benchmark_return_pct": 49.0,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-09-24",
+      "strategy": 389357.28,
+      "benchmark": 151467.1,
+      "strategy_return_pct": 289.36,
+      "benchmark_return_pct": 51.47,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-09-29",
+      "strategy": 393279.61,
+      "benchmark": 150263.23,
+      "strategy_return_pct": 293.28,
+      "benchmark_return_pct": 50.26,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-10-04",
+      "strategy": 401590.23,
+      "benchmark": 150093.12,
+      "strategy_return_pct": 301.59,
+      "benchmark_return_pct": 50.09,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-10-07",
+      "strategy": 413706.71,
+      "benchmark": 150933.88,
+      "strategy_return_pct": 313.71,
+      "benchmark_return_pct": 50.93,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-10-12",
+      "strategy": 414561.05,
+      "benchmark": 152644.26,
+      "strategy_return_pct": 314.56,
+      "benchmark_return_pct": 52.64,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-10-18",
+      "strategy": 420813.44,
+      "benchmark": 156759.88,
+      "strategy_return_pct": 320.81,
+      "benchmark_return_pct": 56.76,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-10-21",
+      "strategy": 386677.7,
+      "benchmark": 154223.56,
+      "strategy_return_pct": 286.68,
+      "benchmark_return_pct": 54.22,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-10-26",
+      "strategy": 399532.02,
+      "benchmark": 154989.68,
+      "strategy_return_pct": 299.53,
+      "benchmark_return_pct": 54.99,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-10-29",
+      "strategy": 387337.9,
+      "benchmark": 149926.83,
+      "strategy_return_pct": 287.34,
+      "benchmark_return_pct": 49.93,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-11-03",
+      "strategy": 424658.09,
+      "benchmark": 151263.48,
+      "strategy_return_pct": 324.66,
+      "benchmark_return_pct": 51.26,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2021-11-09",
+      "strategy": 430124.59,
+      "benchmark": 153087.98,
+      "strategy_return_pct": 330.12,
+      "benchmark_return_pct": 53.09,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-11-12",
+      "strategy": 427668.5,
+      "benchmark": 153584.3,
+      "strategy_return_pct": 327.67,
+      "benchmark_return_pct": 53.58,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-11-17",
+      "strategy": 415679.11,
+      "benchmark": 151852.71,
+      "strategy_return_pct": 315.68,
+      "benchmark_return_pct": 51.85,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-11-23",
+      "strategy": 418090.41,
+      "benchmark": 148498.96,
+      "strategy_return_pct": 318.09,
+      "benchmark_return_pct": 48.5,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-11-26",
+      "strategy": 397437.48,
+      "benchmark": 144452.93,
+      "strategy_return_pct": 297.44,
+      "benchmark_return_pct": 44.45,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-12-01",
+      "strategy": 397321.78,
+      "benchmark": 145644.52,
+      "strategy_return_pct": 297.32,
+      "benchmark_return_pct": 45.64,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-12-06",
+      "strategy": 397747.28,
+      "benchmark": 143484.06,
+      "strategy_return_pct": 297.75,
+      "benchmark_return_pct": 43.48,
+      "holding": "METAL"
+    },
+    {
+      "date": "2021-12-09",
+      "strategy": 417532.31,
+      "benchmark": 148613.5,
+      "strategy_return_pct": 317.53,
+      "benchmark_return_pct": 48.61,
+      "holding": "IT"
+    },
+    {
+      "date": "2021-12-14",
+      "strategy": 419346.63,
+      "benchmark": 146985.0,
+      "strategy_return_pct": 319.35,
+      "benchmark_return_pct": 46.98,
+      "holding": "IT"
+    },
+    {
+      "date": "2021-12-17",
+      "strategy": 425681.07,
+      "benchmark": 144102.96,
+      "strategy_return_pct": 325.68,
+      "benchmark_return_pct": 44.1,
+      "holding": "IT"
+    },
+    {
+      "date": "2021-12-22",
+      "strategy": 429644.84,
+      "benchmark": 143850.56,
+      "strategy_return_pct": 329.64,
+      "benchmark_return_pct": 43.85,
+      "holding": "IT"
+    },
+    {
+      "date": "2021-12-27",
+      "strategy": 441252.74,
+      "benchmark": 144960.28,
+      "strategy_return_pct": 341.25,
+      "benchmark_return_pct": 44.96,
+      "holding": "IT"
+    },
+    {
+      "date": "2021-12-30",
+      "strategy": 449038.57,
+      "benchmark": 145958.84,
+      "strategy_return_pct": 349.04,
+      "benchmark_return_pct": 45.96,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-01-04",
+      "strategy": 457307.57,
+      "benchmark": 151060.3,
+      "strategy_return_pct": 357.31,
+      "benchmark_return_pct": 51.06,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-01-07",
+      "strategy": 440488.26,
+      "benchmark": 151123.5,
+      "strategy_return_pct": 340.49,
+      "benchmark_return_pct": 51.12,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-01-12",
+      "strategy": 454337.76,
+      "benchmark": 154514.14,
+      "strategy_return_pct": 354.34,
+      "benchmark_return_pct": 54.51,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-01-17",
+      "strategy": 463519.38,
+      "benchmark": 155326.49,
+      "strategy_return_pct": 363.52,
+      "benchmark_return_pct": 55.33,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-01-20",
+      "strategy": 451891.66,
+      "benchmark": 150650.94,
+      "strategy_return_pct": 351.89,
+      "benchmark_return_pct": 50.65,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-01-25",
+      "strategy": 449533.33,
+      "benchmark": 146586.66,
+      "strategy_return_pct": 349.53,
+      "benchmark_return_pct": 46.59,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-01-31",
+      "strategy": 456584.87,
+      "benchmark": 147111.83,
+      "strategy_return_pct": 356.58,
+      "benchmark_return_pct": 47.11,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-02-03",
+      "strategy": 455800.73,
+      "benchmark": 148981.28,
+      "strategy_return_pct": 355.8,
+      "benchmark_return_pct": 48.98,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-02-08",
+      "strategy": 448585.15,
+      "benchmark": 146491.65,
+      "strategy_return_pct": 348.59,
+      "benchmark_return_pct": 46.49,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-02-11",
+      "strategy": 459899.77,
+      "benchmark": 147407.92,
+      "strategy_return_pct": 359.9,
+      "benchmark_return_pct": 47.41,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-02-16",
+      "strategy": 443740.91,
+      "benchmark": 146962.08,
+      "strategy_return_pct": 343.74,
+      "benchmark_return_pct": 46.96,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-02-21",
+      "strategy": 432044.55,
+      "benchmark": 145981.76,
+      "strategy_return_pct": 332.04,
+      "benchmark_return_pct": 45.98,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-02-24",
+      "strategy": 405681.87,
+      "benchmark": 137848.12,
+      "strategy_return_pct": 305.68,
+      "benchmark_return_pct": 37.85,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-03-02",
+      "strategy": 468519.39,
+      "benchmark": 140885.39,
+      "strategy_return_pct": 368.52,
+      "benchmark_return_pct": 40.89,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-03-07",
+      "strategy": 468477.38,
+      "benchmark": 134583.46,
+      "strategy_return_pct": 368.48,
+      "benchmark_return_pct": 34.58,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-03-10",
+      "strategy": 470447.16,
+      "benchmark": 140791.65,
+      "strategy_return_pct": 370.45,
+      "benchmark_return_pct": 40.79,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-03-15",
+      "strategy": 451219.13,
+      "benchmark": 141369.41,
+      "strategy_return_pct": 351.22,
+      "benchmark_return_pct": 41.37,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-03-21",
+      "strategy": 479181.26,
+      "benchmark": 145226.25,
+      "strategy_return_pct": 379.18,
+      "benchmark_return_pct": 45.23,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-03-24",
+      "strategy": 496118.88,
+      "benchmark": 146118.35,
+      "strategy_return_pct": 396.12,
+      "benchmark_return_pct": 46.12,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-03-29",
+      "strategy": 501741.83,
+      "benchmark": 146988.39,
+      "strategy_return_pct": 401.74,
+      "benchmark_return_pct": 46.99,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-04-01",
+      "strategy": 494515.59,
+      "benchmark": 149916.64,
+      "strategy_return_pct": 394.52,
+      "benchmark_return_pct": 49.92,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-04-06",
+      "strategy": 513816.12,
+      "benchmark": 151080.66,
+      "strategy_return_pct": 413.82,
+      "benchmark_return_pct": 51.08,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-04-11",
+      "strategy": 515189.19,
+      "benchmark": 149954.82,
+      "strategy_return_pct": 415.19,
+      "benchmark_return_pct": 49.95,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-04-18",
+      "strategy": 508734.01,
+      "benchmark": 145701.79,
+      "strategy_return_pct": 408.73,
+      "benchmark_return_pct": 45.7,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-04-21",
+      "strategy": 525057.8,
+      "benchmark": 147559.36,
+      "strategy_return_pct": 425.06,
+      "benchmark_return_pct": 47.56,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-04-26",
+      "strategy": 531269.19,
+      "benchmark": 145932.13,
+      "strategy_return_pct": 431.27,
+      "benchmark_return_pct": 45.93,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-04-29",
+      "strategy": 524468.38,
+      "benchmark": 145098.57,
+      "strategy_return_pct": 424.47,
+      "benchmark_return_pct": 45.1,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-05-05",
+      "strategy": 506837.94,
+      "benchmark": 141536.13,
+      "strategy_return_pct": 406.84,
+      "benchmark_return_pct": 41.54,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-05-10",
+      "strategy": 495795.23,
+      "benchmark": 137781.09,
+      "strategy_return_pct": 395.8,
+      "benchmark_return_pct": 37.78,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-05-13",
+      "strategy": 492949.9,
+      "benchmark": 133896.26,
+      "strategy_return_pct": 392.95,
+      "benchmark_return_pct": 33.9,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-05-18",
+      "strategy": 516484.04,
+      "benchmark": 137783.21,
+      "strategy_return_pct": 416.48,
+      "benchmark_return_pct": 37.78,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-05-23",
+      "strategy": 526224.82,
+      "benchmark": 137566.02,
+      "strategy_return_pct": 426.22,
+      "benchmark_return_pct": 37.57,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-05-26",
+      "strategy": 525370.29,
+      "benchmark": 137188.06,
+      "strategy_return_pct": 425.37,
+      "benchmark_return_pct": 37.19,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-05-31",
+      "strategy": 548542.2,
+      "benchmark": 140703.85,
+      "strategy_return_pct": 448.54,
+      "benchmark_return_pct": 40.7,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-06-03",
+      "strategy": 534128.71,
+      "benchmark": 140701.73,
+      "strategy_return_pct": 434.13,
+      "benchmark_return_pct": 40.7,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-06-08",
+      "strategy": 538872.43,
+      "benchmark": 138766.94,
+      "strategy_return_pct": 438.87,
+      "benchmark_return_pct": 38.77,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2022-06-13",
+      "strategy": 522561.82,
+      "benchmark": 133830.51,
+      "strategy_return_pct": 422.56,
+      "benchmark_return_pct": 33.83,
+      "holding": "BANK"
+    },
+    {
+      "date": "2022-06-16",
+      "strategy": 510223.51,
+      "benchmark": 130319.81,
+      "strategy_return_pct": 410.22,
+      "benchmark_return_pct": 30.32,
+      "holding": "BANK"
+    },
+    {
+      "date": "2022-06-21",
+      "strategy": 519212.67,
+      "benchmark": 132680.07,
+      "strategy_return_pct": 419.21,
+      "benchmark_return_pct": 32.68,
+      "holding": "BANK"
+    },
+    {
+      "date": "2022-06-24",
+      "strategy": 526028.23,
+      "benchmark": 133192.93,
+      "strategy_return_pct": 426.03,
+      "benchmark_return_pct": 33.19,
+      "holding": "BANK"
+    },
+    {
+      "date": "2022-06-29",
+      "strategy": 520435.13,
+      "benchmark": 134040.05,
+      "strategy_return_pct": 420.44,
+      "benchmark_return_pct": 34.04,
+      "holding": "BANK"
+    },
+    {
+      "date": "2022-07-04",
+      "strategy": 530931.46,
+      "benchmark": 134347.6,
+      "strategy_return_pct": 430.93,
+      "benchmark_return_pct": 34.35,
+      "holding": "BANK"
+    },
+    {
+      "date": "2022-07-07",
+      "strategy": 546252.08,
+      "benchmark": 136872.03,
+      "strategy_return_pct": 446.25,
+      "benchmark_return_pct": 36.87,
+      "holding": "BANK"
+    },
+    {
+      "date": "2022-07-12",
+      "strategy": 555377.62,
+      "benchmark": 136239.12,
+      "strategy_return_pct": 455.38,
+      "benchmark_return_pct": 36.24,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2022-07-15",
+      "strategy": 558770.14,
+      "benchmark": 136161.92,
+      "strategy_return_pct": 458.77,
+      "benchmark_return_pct": 36.16,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2022-07-20",
+      "strategy": 578992.31,
+      "benchmark": 140163.4,
+      "strategy_return_pct": 478.99,
+      "benchmark_return_pct": 40.16,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2022-07-25",
+      "strategy": 582052.23,
+      "benchmark": 141097.92,
+      "strategy_return_pct": 482.05,
+      "benchmark_return_pct": 41.1,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2022-07-28",
+      "strategy": 594424.98,
+      "benchmark": 143631.25,
+      "strategy_return_pct": 494.42,
+      "benchmark_return_pct": 43.63,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2022-08-02",
+      "strategy": 592030.27,
+      "benchmark": 147159.33,
+      "strategy_return_pct": 492.03,
+      "benchmark_return_pct": 47.16,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2022-08-05",
+      "strategy": 582584.38,
+      "benchmark": 147600.93,
+      "strategy_return_pct": 482.58,
+      "benchmark_return_pct": 47.6,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2022-08-11",
+      "strategy": 578384.79,
+      "benchmark": 149819.51,
+      "strategy_return_pct": 478.38,
+      "benchmark_return_pct": 49.82,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-08-17",
+      "strategy": 594850.93,
+      "benchmark": 152239.58,
+      "strategy_return_pct": 494.85,
+      "benchmark_return_pct": 52.24,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-08-22",
+      "strategy": 573287.76,
+      "benchmark": 148391.64,
+      "strategy_return_pct": 473.29,
+      "benchmark_return_pct": 48.39,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-08-25",
+      "strategy": 582527.7,
+      "benchmark": 148661.01,
+      "strategy_return_pct": 482.53,
+      "benchmark_return_pct": 48.66,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-08-30",
+      "strategy": 596036.08,
+      "benchmark": 150670.46,
+      "strategy_return_pct": 496.04,
+      "benchmark_return_pct": 50.67,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-09-05",
+      "strategy": 601173.28,
+      "benchmark": 149877.21,
+      "strategy_return_pct": 501.17,
+      "benchmark_return_pct": 49.88,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-09-08",
+      "strategy": 603759.45,
+      "benchmark": 151005.15,
+      "strategy_return_pct": 503.76,
+      "benchmark_return_pct": 51.01,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-09-13",
+      "strategy": 618563.43,
+      "benchmark": 153306.87,
+      "strategy_return_pct": 518.56,
+      "benchmark_return_pct": 53.31,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-09-16",
+      "strategy": 616429.2,
+      "benchmark": 148732.28,
+      "strategy_return_pct": 516.43,
+      "benchmark_return_pct": 48.73,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-09-21",
+      "strategy": 610247.51,
+      "benchmark": 150323.03,
+      "strategy_return_pct": 510.25,
+      "benchmark_return_pct": 50.32,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-09-26",
+      "strategy": 580333.21,
+      "benchmark": 144366.83,
+      "strategy_return_pct": 480.33,
+      "benchmark_return_pct": 44.37,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-09-29",
+      "strategy": 567045.8,
+      "benchmark": 142685.28,
+      "strategy_return_pct": 467.05,
+      "benchmark_return_pct": 42.69,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-10-04",
+      "strategy": 579434.3,
+      "benchmark": 146555.71,
+      "strategy_return_pct": 479.43,
+      "benchmark_return_pct": 46.56,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-10-10",
+      "strategy": 594208.16,
+      "benchmark": 146273.18,
+      "strategy_return_pct": 494.21,
+      "benchmark_return_pct": 46.27,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-10-13",
+      "strategy": 578369.3,
+      "benchmark": 144350.27,
+      "strategy_return_pct": 478.37,
+      "benchmark_return_pct": 44.35,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-10-18",
+      "strategy": 595380.03,
+      "benchmark": 148359.82,
+      "strategy_return_pct": 495.38,
+      "benchmark_return_pct": 48.36,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-10-21",
+      "strategy": 595837.37,
+      "benchmark": 149117.88,
+      "strategy_return_pct": 495.84,
+      "benchmark_return_pct": 49.12,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-10-27",
+      "strategy": 600783.94,
+      "benchmark": 150480.83,
+      "strategy_return_pct": 500.78,
+      "benchmark_return_pct": 50.48,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-11-01",
+      "strategy": 615470.18,
+      "benchmark": 153946.14,
+      "strategy_return_pct": 515.47,
+      "benchmark_return_pct": 53.95,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-11-04",
+      "strategy": 603325.07,
+      "benchmark": 153706.47,
+      "strategy_return_pct": 503.33,
+      "benchmark_return_pct": 53.71,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-11-10",
+      "strategy": 599386.72,
+      "benchmark": 152951.8,
+      "strategy_return_pct": 499.39,
+      "benchmark_return_pct": 52.95,
+      "holding": "IT"
+    },
+    {
+      "date": "2022-11-15",
+      "strategy": 630608.8,
+      "benchmark": 156135.02,
+      "strategy_return_pct": 530.61,
+      "benchmark_return_pct": 56.14,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-11-18",
+      "strategy": 616718.2,
+      "benchmark": 155322.68,
+      "strategy_return_pct": 516.72,
+      "benchmark_return_pct": 55.32,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-11-23",
+      "strategy": 614655.92,
+      "benchmark": 154979.92,
+      "strategy_return_pct": 514.66,
+      "benchmark_return_pct": 54.98,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-11-28",
+      "strategy": 610684.44,
+      "benchmark": 157486.95,
+      "strategy_return_pct": 510.68,
+      "benchmark_return_pct": 57.49,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-12-01",
+      "strategy": 637814.91,
+      "benchmark": 159605.84,
+      "strategy_return_pct": 537.81,
+      "benchmark_return_pct": 59.61,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-12-06",
+      "strategy": 647767.54,
+      "benchmark": 158165.67,
+      "strategy_return_pct": 547.77,
+      "benchmark_return_pct": 58.17,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-12-09",
+      "strategy": 639413.05,
+      "benchmark": 156925.73,
+      "strategy_return_pct": 539.41,
+      "benchmark_return_pct": 56.93,
+      "holding": "METAL"
+    },
+    {
+      "date": "2022-12-14",
+      "strategy": 640548.98,
+      "benchmark": 158314.57,
+      "strategy_return_pct": 540.55,
+      "benchmark_return_pct": 58.31,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2022-12-19",
+      "strategy": 640996.43,
+      "benchmark": 156279.67,
+      "strategy_return_pct": 541.0,
+      "benchmark_return_pct": 56.28,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2022-12-22",
+      "strategy": 628507.32,
+      "benchmark": 153793.0,
+      "strategy_return_pct": 528.51,
+      "benchmark_return_pct": 53.79,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2022-12-27",
+      "strategy": 621172.58,
+      "benchmark": 153835.01,
+      "strategy_return_pct": 521.17,
+      "benchmark_return_pct": 53.84,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2022-12-30",
+      "strategy": 615764.44,
+      "benchmark": 153605.94,
+      "strategy_return_pct": 515.76,
+      "benchmark_return_pct": 53.61,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2023-01-04",
+      "strategy": 609520.59,
+      "benchmark": 153076.94,
+      "strategy_return_pct": 509.52,
+      "benchmark_return_pct": 53.08,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2023-01-09",
+      "strategy": 624479.92,
+      "benchmark": 153571.14,
+      "strategy_return_pct": 524.48,
+      "benchmark_return_pct": 53.57,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2023-01-12",
+      "strategy": 615877.65,
+      "benchmark": 151509.52,
+      "strategy_return_pct": 515.88,
+      "benchmark_return_pct": 51.51,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-01-17",
+      "strategy": 618407.31,
+      "benchmark": 153164.77,
+      "strategy_return_pct": 518.41,
+      "benchmark_return_pct": 53.16,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-01-20",
+      "strategy": 612130.11,
+      "benchmark": 152947.15,
+      "strategy_return_pct": 512.13,
+      "benchmark_return_pct": 52.95,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-01-25",
+      "strategy": 624932.97,
+      "benchmark": 151795.86,
+      "strategy_return_pct": 524.93,
+      "benchmark_return_pct": 51.8,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-01-31",
+      "strategy": 642621.59,
+      "benchmark": 149846.24,
+      "strategy_return_pct": 542.62,
+      "benchmark_return_pct": 49.85,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-02-03",
+      "strategy": 645228.45,
+      "benchmark": 151474.32,
+      "strategy_return_pct": 545.23,
+      "benchmark_return_pct": 51.47,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-02-08",
+      "strategy": 639411.8,
+      "benchmark": 151624.05,
+      "strategy_return_pct": 539.41,
+      "benchmark_return_pct": 51.62,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-02-13",
+      "strategy": 626331.63,
+      "benchmark": 150768.87,
+      "strategy_return_pct": 526.33,
+      "benchmark_return_pct": 50.77,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-02-16",
+      "strategy": 650012.14,
+      "benchmark": 153016.71,
+      "strategy_return_pct": 550.01,
+      "benchmark_return_pct": 53.02,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-02-21",
+      "strategy": 639929.52,
+      "benchmark": 151242.27,
+      "strategy_return_pct": 539.93,
+      "benchmark_return_pct": 51.24,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-02-24",
+      "strategy": 630989.37,
+      "benchmark": 148180.4,
+      "strategy_return_pct": 530.99,
+      "benchmark_return_pct": 48.18,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-03-01",
+      "strategy": 622363.5,
+      "benchmark": 148053.98,
+      "strategy_return_pct": 522.36,
+      "benchmark_return_pct": 48.05,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-03-06",
+      "strategy": 624059.1,
+      "benchmark": 150264.49,
+      "strategy_return_pct": 524.06,
+      "benchmark_return_pct": 50.26,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-03-10",
+      "strategy": 610944.03,
+      "benchmark": 147731.59,
+      "strategy_return_pct": 510.94,
+      "benchmark_return_pct": 47.73,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-03-15",
+      "strategy": 605908.44,
+      "benchmark": 143992.25,
+      "strategy_return_pct": 505.91,
+      "benchmark_return_pct": 43.99,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-03-20",
+      "strategy": 590195.71,
+      "benchmark": 144130.12,
+      "strategy_return_pct": 490.2,
+      "benchmark_return_pct": 44.13,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-03-23",
+      "strategy": 593108.48,
+      "benchmark": 144880.96,
+      "strategy_return_pct": 493.11,
+      "benchmark_return_pct": 44.88,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-03-28",
+      "strategy": 575033.14,
+      "benchmark": 143818.75,
+      "strategy_return_pct": 475.03,
+      "benchmark_return_pct": 43.82,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-04-03",
+      "strategy": 590950.88,
+      "benchmark": 147605.61,
+      "strategy_return_pct": 490.95,
+      "benchmark_return_pct": 47.61,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-04-10",
+      "strategy": 600918.98,
+      "benchmark": 149523.0,
+      "strategy_return_pct": 500.92,
+      "benchmark_return_pct": 49.52,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-04-13",
+      "strategy": 616000.6,
+      "benchmark": 151253.31,
+      "strategy_return_pct": 516.0,
+      "benchmark_return_pct": 51.25,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-04-19",
+      "strategy": 621203.19,
+      "benchmark": 149478.02,
+      "strategy_return_pct": 521.2,
+      "benchmark_return_pct": 49.48,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-04-24",
+      "strategy": 611839.78,
+      "benchmark": 150535.56,
+      "strategy_return_pct": 511.84,
+      "benchmark_return_pct": 50.54,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-04-27",
+      "strategy": 632710.95,
+      "benchmark": 151991.85,
+      "strategy_return_pct": 532.71,
+      "benchmark_return_pct": 51.99,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-05-03",
+      "strategy": 637857.28,
+      "benchmark": 153474.85,
+      "strategy_return_pct": 537.86,
+      "benchmark_return_pct": 53.47,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-05-08",
+      "strategy": 646648.89,
+      "benchmark": 154955.74,
+      "strategy_return_pct": 546.65,
+      "benchmark_return_pct": 54.96,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-05-11",
+      "strategy": 649722.38,
+      "benchmark": 155232.32,
+      "strategy_return_pct": 549.72,
+      "benchmark_return_pct": 55.23,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-05-16",
+      "strategy": 674882.15,
+      "benchmark": 155143.24,
+      "strategy_return_pct": 574.88,
+      "benchmark_return_pct": 55.14,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-05-19",
+      "strategy": 654605.56,
+      "benchmark": 154438.22,
+      "strategy_return_pct": 554.61,
+      "benchmark_return_pct": 54.44,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-05-24",
+      "strategy": 660557.35,
+      "benchmark": 155133.91,
+      "strategy_return_pct": 560.56,
+      "benchmark_return_pct": 55.13,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-05-29",
+      "strategy": 671417.43,
+      "benchmark": 157791.53,
+      "strategy_return_pct": 571.42,
+      "benchmark_return_pct": 57.79,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-06-01",
+      "strategy": 673183.39,
+      "benchmark": 156850.65,
+      "strategy_return_pct": 573.18,
+      "benchmark_return_pct": 56.85,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-06-06",
+      "strategy": 695493.78,
+      "benchmark": 157794.5,
+      "strategy_return_pct": 595.49,
+      "benchmark_return_pct": 57.79,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-06-09",
+      "strategy": 690606.74,
+      "benchmark": 157492.47,
+      "strategy_return_pct": 590.61,
+      "benchmark_return_pct": 57.49,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-06-14",
+      "strategy": 693284.0,
+      "benchmark": 159125.64,
+      "strategy_return_pct": 593.28,
+      "benchmark_return_pct": 59.13,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2023-06-19",
+      "strategy": 692275.87,
+      "benchmark": 159121.82,
+      "strategy_return_pct": 592.28,
+      "benchmark_return_pct": 59.12,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-06-22",
+      "strategy": 687825.69,
+      "benchmark": 159255.87,
+      "strategy_return_pct": 587.83,
+      "benchmark_return_pct": 59.26,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-06-27",
+      "strategy": 694298.69,
+      "benchmark": 159647.41,
+      "strategy_return_pct": 594.3,
+      "benchmark_return_pct": 59.65,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-07-03",
+      "strategy": 706503.1,
+      "benchmark": 163933.12,
+      "strategy_return_pct": 606.5,
+      "benchmark_return_pct": 63.93,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-07-06",
+      "strategy": 725180.42,
+      "benchmark": 165415.71,
+      "strategy_return_pct": 625.18,
+      "benchmark_return_pct": 65.42,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-07-11",
+      "strategy": 710481.24,
+      "benchmark": 164924.48,
+      "strategy_return_pct": 610.48,
+      "benchmark_return_pct": 64.92,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-07-14",
+      "strategy": 727944.92,
+      "benchmark": 165985.83,
+      "strategy_return_pct": 627.94,
+      "benchmark_return_pct": 65.99,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-07-19",
+      "strategy": 725423.11,
+      "benchmark": 168265.07,
+      "strategy_return_pct": 625.42,
+      "benchmark_return_pct": 68.27,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2023-07-24",
+      "strategy": 737748.92,
+      "benchmark": 166900.83,
+      "strategy_return_pct": 637.75,
+      "benchmark_return_pct": 66.9,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2023-07-27",
+      "strategy": 768011.37,
+      "benchmark": 166795.21,
+      "strategy_return_pct": 668.01,
+      "benchmark_return_pct": 66.8,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2023-08-01",
+      "strategy": 772198.88,
+      "benchmark": 167420.06,
+      "strategy_return_pct": 672.2,
+      "benchmark_return_pct": 67.42,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2023-08-04",
+      "strategy": 784537.56,
+      "benchmark": 165582.84,
+      "strategy_return_pct": 684.54,
+      "benchmark_return_pct": 65.58,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2023-08-09",
+      "strategy": 808002.63,
+      "benchmark": 166563.17,
+      "strategy_return_pct": 708.0,
+      "benchmark_return_pct": 66.56,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2023-08-14",
+      "strategy": 787852.6,
+      "benchmark": 164883.34,
+      "strategy_return_pct": 687.85,
+      "benchmark_return_pct": 64.88,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2023-08-18",
+      "strategy": 791644.32,
+      "benchmark": 163827.92,
+      "strategy_return_pct": 691.64,
+      "benchmark_return_pct": 63.83,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2023-08-23",
+      "strategy": 793690.98,
+      "benchmark": 164963.5,
+      "strategy_return_pct": 693.69,
+      "benchmark_return_pct": 64.96,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2023-08-28",
+      "strategy": 783024.29,
+      "benchmark": 163793.14,
+      "strategy_return_pct": 683.02,
+      "benchmark_return_pct": 63.79,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2023-08-31",
+      "strategy": 774210.03,
+      "benchmark": 163349.85,
+      "strategy_return_pct": 674.21,
+      "benchmark_return_pct": 63.35,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2023-09-05",
+      "strategy": 804911.55,
+      "benchmark": 166074.07,
+      "strategy_return_pct": 704.91,
+      "benchmark_return_pct": 66.07,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2023-09-08",
+      "strategy": 825831.21,
+      "benchmark": 168153.07,
+      "strategy_return_pct": 725.83,
+      "benchmark_return_pct": 68.15,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2023-09-13",
+      "strategy": 820934.22,
+      "benchmark": 170274.51,
+      "strategy_return_pct": 720.93,
+      "benchmark_return_pct": 70.27,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2023-09-18",
+      "strategy": 817260.37,
+      "benchmark": 170811.55,
+      "strategy_return_pct": 717.26,
+      "benchmark_return_pct": 70.81,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-09-22",
+      "strategy": 811754.34,
+      "benchmark": 166916.95,
+      "strategy_return_pct": 711.75,
+      "benchmark_return_pct": 66.92,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-09-27",
+      "strategy": 804066.34,
+      "benchmark": 167274.97,
+      "strategy_return_pct": 704.07,
+      "benchmark_return_pct": 67.27,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-10-03",
+      "strategy": 782422.05,
+      "benchmark": 165682.52,
+      "strategy_return_pct": 682.42,
+      "benchmark_return_pct": 65.68,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-10-06",
+      "strategy": 797826.38,
+      "benchmark": 166740.91,
+      "strategy_return_pct": 697.83,
+      "benchmark_return_pct": 66.74,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-10-11",
+      "strategy": 802916.8,
+      "benchmark": 168080.11,
+      "strategy_return_pct": 702.92,
+      "benchmark_return_pct": 68.08,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-10-16",
+      "strategy": 783239.83,
+      "benchmark": 167404.78,
+      "strategy_return_pct": 683.24,
+      "benchmark_return_pct": 67.4,
+      "holding": "IT"
+    },
+    {
+      "date": "2023-10-19",
+      "strategy": 772866.24,
+      "benchmark": 166496.56,
+      "strategy_return_pct": 672.87,
+      "benchmark_return_pct": 66.5,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-10-25",
+      "strategy": 738825.51,
+      "benchmark": 162232.92,
+      "strategy_return_pct": 638.83,
+      "benchmark_return_pct": 62.23,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-10-30",
+      "strategy": 734769.96,
+      "benchmark": 162392.0,
+      "strategy_return_pct": 634.77,
+      "benchmark_return_pct": 62.39,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-11-02",
+      "strategy": 732611.53,
+      "benchmark": 162327.09,
+      "strategy_return_pct": 632.61,
+      "benchmark_return_pct": 62.33,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-11-07",
+      "strategy": 747141.17,
+      "benchmark": 164647.04,
+      "strategy_return_pct": 647.14,
+      "benchmark_return_pct": 64.65,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-11-10",
+      "strategy": 755002.37,
+      "benchmark": 164805.27,
+      "strategy_return_pct": 655.0,
+      "benchmark_return_pct": 64.81,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-11-16",
+      "strategy": 771627.99,
+      "benchmark": 167688.57,
+      "strategy_return_pct": 671.63,
+      "benchmark_return_pct": 67.69,
+      "holding": "METAL"
+    },
+    {
+      "date": "2023-11-21",
+      "strategy": 777942.76,
+      "benchmark": 167842.99,
+      "strategy_return_pct": 677.94,
+      "benchmark_return_pct": 67.84,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-11-24",
+      "strategy": 782562.8,
+      "benchmark": 167938.85,
+      "strategy_return_pct": 682.56,
+      "benchmark_return_pct": 67.94,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-11-30",
+      "strategy": 794418.93,
+      "benchmark": 170810.28,
+      "strategy_return_pct": 694.42,
+      "benchmark_return_pct": 70.81,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-12-05",
+      "strategy": 817518.97,
+      "benchmark": 176935.32,
+      "strategy_return_pct": 717.52,
+      "benchmark_return_pct": 76.94,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-12-08",
+      "strategy": 822361.67,
+      "benchmark": 177905.05,
+      "strategy_return_pct": 722.36,
+      "benchmark_return_pct": 77.91,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-12-13",
+      "strategy": 827927.95,
+      "benchmark": 177539.8,
+      "strategy_return_pct": 727.93,
+      "benchmark_return_pct": 77.54,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-12-18",
+      "strategy": 845740.03,
+      "benchmark": 181716.5,
+      "strategy_return_pct": 745.74,
+      "benchmark_return_pct": 81.72,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2023-12-21",
+      "strategy": 827633.95,
+      "benchmark": 180328.51,
+      "strategy_return_pct": 727.63,
+      "benchmark_return_pct": 80.33,
+      "holding": "BANK"
+    },
+    {
+      "date": "2023-12-27",
+      "strategy": 835281.42,
+      "benchmark": 183719.57,
+      "strategy_return_pct": 735.28,
+      "benchmark_return_pct": 83.72,
+      "holding": "BANK"
+    },
+    {
+      "date": "2024-01-01",
+      "strategy": 834452.78,
+      "benchmark": 184458.96,
+      "strategy_return_pct": 734.45,
+      "benchmark_return_pct": 84.46,
+      "holding": "BANK"
+    },
+    {
+      "date": "2024-01-04",
+      "strategy": 833787.61,
+      "benchmark": 183752.24,
+      "strategy_return_pct": 733.79,
+      "benchmark_return_pct": 83.75,
+      "holding": "BANK"
+    },
+    {
+      "date": "2024-01-09",
+      "strategy": 817297.21,
+      "benchmark": 182787.18,
+      "strategy_return_pct": 717.3,
+      "benchmark_return_pct": 82.79,
+      "holding": "BANK"
+    },
+    {
+      "date": "2024-01-12",
+      "strategy": 825378.94,
+      "benchmark": 185754.05,
+      "strategy_return_pct": 725.38,
+      "benchmark_return_pct": 85.75,
+      "holding": "BANK"
+    },
+    {
+      "date": "2024-01-17",
+      "strategy": 796914.38,
+      "benchmark": 183017.09,
+      "strategy_return_pct": 696.91,
+      "benchmark_return_pct": 83.02,
+      "holding": "BANK"
+    },
+    {
+      "date": "2024-01-23",
+      "strategy": 742973.06,
+      "benchmark": 180190.65,
+      "strategy_return_pct": 642.97,
+      "benchmark_return_pct": 80.19,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-01-29",
+      "strategy": 759131.57,
+      "benchmark": 184422.47,
+      "strategy_return_pct": 659.13,
+      "benchmark_return_pct": 84.42,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-02-01",
+      "strategy": 772103.9,
+      "benchmark": 184081.84,
+      "strategy_return_pct": 672.1,
+      "benchmark_return_pct": 84.08,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-02-06",
+      "strategy": 788581.01,
+      "benchmark": 186049.72,
+      "strategy_return_pct": 688.58,
+      "benchmark_return_pct": 86.05,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-02-09",
+      "strategy": 797411.31,
+      "benchmark": 184803.41,
+      "strategy_return_pct": 697.41,
+      "benchmark_return_pct": 84.8,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-02-14",
+      "strategy": 783801.73,
+      "benchmark": 185291.67,
+      "strategy_return_pct": 683.8,
+      "benchmark_return_pct": 85.29,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-02-19",
+      "strategy": 803556.1,
+      "benchmark": 187685.86,
+      "strategy_return_pct": 703.56,
+      "benchmark_return_pct": 87.69,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-02-22",
+      "strategy": 837142.96,
+      "benchmark": 188493.53,
+      "strategy_return_pct": 737.14,
+      "benchmark_return_pct": 88.49,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-02-27",
+      "strategy": 845427.06,
+      "benchmark": 188331.49,
+      "strategy_return_pct": 745.43,
+      "benchmark_return_pct": 88.33,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-03-01",
+      "strategy": 848818.7,
+      "benchmark": 189522.65,
+      "strategy_return_pct": 748.82,
+      "benchmark_return_pct": 89.52,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-03-06",
+      "strategy": 861399.39,
+      "benchmark": 190670.55,
+      "strategy_return_pct": 761.4,
+      "benchmark_return_pct": 90.67,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-03-12",
+      "strategy": 851254.73,
+      "benchmark": 189496.77,
+      "strategy_return_pct": 751.25,
+      "benchmark_return_pct": 89.5,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-03-15",
+      "strategy": 821178.82,
+      "benchmark": 186846.79,
+      "strategy_return_pct": 721.18,
+      "benchmark_return_pct": 86.85,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-03-20",
+      "strategy": 829887.79,
+      "benchmark": 185283.6,
+      "strategy_return_pct": 729.89,
+      "benchmark_return_pct": 85.28,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-03-26",
+      "strategy": 859113.46,
+      "benchmark": 186688.56,
+      "strategy_return_pct": 759.11,
+      "benchmark_return_pct": 86.69,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-04-01",
+      "strategy": 901378.57,
+      "benchmark": 190568.31,
+      "strategy_return_pct": 801.38,
+      "benchmark_return_pct": 90.57,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-04-04",
+      "strategy": 914194.95,
+      "benchmark": 191015.0,
+      "strategy_return_pct": 814.19,
+      "benchmark_return_pct": 91.01,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-04-09",
+      "strategy": 936296.0,
+      "benchmark": 192101.8,
+      "strategy_return_pct": 836.3,
+      "benchmark_return_pct": 92.1,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-04-15",
+      "strategy": 936853.9,
+      "benchmark": 188960.59,
+      "strategy_return_pct": 836.85,
+      "benchmark_return_pct": 88.96,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-04-19",
+      "strategy": 937832.87,
+      "benchmark": 187895.84,
+      "strategy_return_pct": 837.83,
+      "benchmark_return_pct": 87.9,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-04-24",
+      "strategy": 962160.27,
+      "benchmark": 190062.66,
+      "strategy_return_pct": 862.16,
+      "benchmark_return_pct": 90.06,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-04-29",
+      "strategy": 975708.29,
+      "benchmark": 192107.32,
+      "strategy_return_pct": 875.71,
+      "benchmark_return_pct": 92.11,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-05-03",
+      "strategy": 976497.8,
+      "benchmark": 190685.81,
+      "strategy_return_pct": 876.5,
+      "benchmark_return_pct": 90.69,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-05-08",
+      "strategy": 958186.4,
+      "benchmark": 189215.11,
+      "strategy_return_pct": 858.19,
+      "benchmark_return_pct": 89.22,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-05-13",
+      "strategy": 957391.65,
+      "benchmark": 187531.46,
+      "strategy_return_pct": 857.39,
+      "benchmark_return_pct": 87.53,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-05-16",
+      "strategy": 990087.96,
+      "benchmark": 190074.96,
+      "strategy_return_pct": 890.09,
+      "benchmark_return_pct": 90.07,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-05-22",
+      "strategy": 1044200.97,
+      "benchmark": 191720.45,
+      "strategy_return_pct": 944.2,
+      "benchmark_return_pct": 91.72,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-05-27",
+      "strategy": 1038616.52,
+      "benchmark": 194559.61,
+      "strategy_return_pct": 938.62,
+      "benchmark_return_pct": 94.56,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-05-30",
+      "strategy": 1023451.35,
+      "benchmark": 190794.41,
+      "strategy_return_pct": 923.45,
+      "benchmark_return_pct": 90.79,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-06-04",
+      "strategy": 1011342.29,
+      "benchmark": 185668.78,
+      "strategy_return_pct": 911.34,
+      "benchmark_return_pct": 85.67,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-06-07",
+      "strategy": 1091004.07,
+      "benchmark": 197594.36,
+      "strategy_return_pct": 991.0,
+      "benchmark_return_pct": 97.59,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-06-12",
+      "strategy": 1099611.7,
+      "benchmark": 197872.63,
+      "strategy_return_pct": 999.61,
+      "benchmark_return_pct": 97.87,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-06-18",
+      "strategy": 1121313.93,
+      "benchmark": 199865.96,
+      "strategy_return_pct": 1021.31,
+      "benchmark_return_pct": 99.87,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-06-21",
+      "strategy": 1094148.06,
+      "benchmark": 199384.06,
+      "strategy_return_pct": 994.15,
+      "benchmark_return_pct": 99.38,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-06-26",
+      "strategy": 1090947.44,
+      "benchmark": 202503.65,
+      "strategy_return_pct": 990.95,
+      "benchmark_return_pct": 102.5,
+      "holding": "AUTO"
+    },
+    {
+      "date": "2024-07-01",
+      "strategy": 1095190.16,
+      "benchmark": 204821.05,
+      "strategy_return_pct": 995.19,
+      "benchmark_return_pct": 104.82,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-07-04",
+      "strategy": 1113541.92,
+      "benchmark": 206180.2,
+      "strategy_return_pct": 1013.54,
+      "benchmark_return_pct": 106.18,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-07-09",
+      "strategy": 1121051.78,
+      "benchmark": 207292.02,
+      "strategy_return_pct": 1021.05,
+      "benchmark_return_pct": 107.29,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-07-12",
+      "strategy": 1087381.84,
+      "benchmark": 207877.01,
+      "strategy_return_pct": 987.38,
+      "benchmark_return_pct": 107.88,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-07-18",
+      "strategy": 1116724.84,
+      "benchmark": 210411.18,
+      "strategy_return_pct": 1016.72,
+      "benchmark_return_pct": 110.41,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-07-23",
+      "strategy": 1060276.87,
+      "benchmark": 207681.03,
+      "strategy_return_pct": 960.28,
+      "benchmark_return_pct": 107.68,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-07-26",
+      "strategy": 1071914.67,
+      "benchmark": 210699.64,
+      "strategy_return_pct": 971.91,
+      "benchmark_return_pct": 110.7,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-07-31",
+      "strategy": 1105225.93,
+      "benchmark": 211686.34,
+      "strategy_return_pct": 1005.23,
+      "benchmark_return_pct": 111.69,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-08-05",
+      "strategy": 1022086.57,
+      "benchmark": 204088.46,
+      "strategy_return_pct": 922.09,
+      "benchmark_return_pct": 104.09,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-08-08",
+      "strategy": 1034397.74,
+      "benchmark": 204609.38,
+      "strategy_return_pct": 934.4,
+      "benchmark_return_pct": 104.61,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-08-13",
+      "strategy": 1033002.32,
+      "benchmark": 204796.03,
+      "strategy_return_pct": 933.0,
+      "benchmark_return_pct": 104.8,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-08-19",
+      "strategy": 1056621.29,
+      "benchmark": 208475.13,
+      "strategy_return_pct": 956.62,
+      "benchmark_return_pct": 108.48,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-08-22",
+      "strategy": 1075569.52,
+      "benchmark": 210501.54,
+      "strategy_return_pct": 975.57,
+      "benchmark_return_pct": 110.5,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-08-27",
+      "strategy": 1087851.86,
+      "benchmark": 212251.37,
+      "strategy_return_pct": 987.85,
+      "benchmark_return_pct": 112.25,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-08-30",
+      "strategy": 1084680.36,
+      "benchmark": 214102.17,
+      "strategy_return_pct": 984.68,
+      "benchmark_return_pct": 114.1,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-09-04",
+      "strategy": 1059337.23,
+      "benchmark": 213786.55,
+      "strategy_return_pct": 959.34,
+      "benchmark_return_pct": 113.79,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-09-09",
+      "strategy": 1049361.43,
+      "benchmark": 211561.2,
+      "strategy_return_pct": 949.36,
+      "benchmark_return_pct": 111.56,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-09-12",
+      "strategy": 1071486.89,
+      "benchmark": 215400.22,
+      "strategy_return_pct": 971.49,
+      "benchmark_return_pct": 115.4,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-09-17",
+      "strategy": 1082708.31,
+      "benchmark": 215651.78,
+      "strategy_return_pct": 982.71,
+      "benchmark_return_pct": 115.65,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-09-20",
+      "strategy": 1084570.78,
+      "benchmark": 218811.22,
+      "strategy_return_pct": 984.57,
+      "benchmark_return_pct": 118.81,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-09-25",
+      "strategy": 1127570.56,
+      "benchmark": 220620.02,
+      "strategy_return_pct": 1027.57,
+      "benchmark_return_pct": 120.62,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-09-30",
+      "strategy": 1176146.25,
+      "benchmark": 218980.05,
+      "strategy_return_pct": 1076.15,
+      "benchmark_return_pct": 118.98,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-10-04",
+      "strategy": 1166326.21,
+      "benchmark": 212224.64,
+      "strategy_return_pct": 1066.33,
+      "benchmark_return_pct": 112.22,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-10-09",
+      "strategy": 1130292.23,
+      "benchmark": 211947.64,
+      "strategy_return_pct": 1030.29,
+      "benchmark_return_pct": 111.95,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-10-14",
+      "strategy": 1142315.09,
+      "benchmark": 213186.31,
+      "strategy_return_pct": 1042.32,
+      "benchmark_return_pct": 113.19,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-10-17",
+      "strategy": 1107520.87,
+      "benchmark": 209978.5,
+      "strategy_return_pct": 1007.52,
+      "benchmark_return_pct": 109.98,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-10-22",
+      "strategy": 1074710.31,
+      "benchmark": 207622.06,
+      "strategy_return_pct": 974.71,
+      "benchmark_return_pct": 107.62,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-10-25",
+      "strategy": 1043589.33,
+      "benchmark": 205150.67,
+      "strategy_return_pct": 943.59,
+      "benchmark_return_pct": 105.15,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-10-30",
+      "strategy": 1077437.84,
+      "benchmark": 206508.53,
+      "strategy_return_pct": 977.44,
+      "benchmark_return_pct": 106.51,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-11-04",
+      "strategy": 1065957.05,
+      "benchmark": 203577.3,
+      "strategy_return_pct": 965.96,
+      "benchmark_return_pct": 103.58,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-11-07",
+      "strategy": 1083250.26,
+      "benchmark": 205308.04,
+      "strategy_return_pct": 983.25,
+      "benchmark_return_pct": 105.31,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-11-12",
+      "strategy": 1046997.22,
+      "benchmark": 202627.93,
+      "strategy_return_pct": 947.0,
+      "benchmark_return_pct": 102.63,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-11-18",
+      "strategy": 1037557.74,
+      "benchmark": 198982.78,
+      "strategy_return_pct": 937.56,
+      "benchmark_return_pct": 98.98,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-11-22",
+      "strategy": 1020206.76,
+      "benchmark": 202829.86,
+      "strategy_return_pct": 920.21,
+      "benchmark_return_pct": 102.83,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-11-27",
+      "strategy": 1036485.11,
+      "benchmark": 205949.01,
+      "strategy_return_pct": 936.49,
+      "benchmark_return_pct": 105.95,
+      "holding": "METAL"
+    },
+    {
+      "date": "2024-12-02",
+      "strategy": 1073576.03,
+      "benchmark": 205958.77,
+      "strategy_return_pct": 973.58,
+      "benchmark_return_pct": 105.96,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-12-05",
+      "strategy": 1097320.93,
+      "benchmark": 209626.84,
+      "strategy_return_pct": 997.32,
+      "benchmark_return_pct": 109.63,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-12-10",
+      "strategy": 1115601.98,
+      "benchmark": 208792.44,
+      "strategy_return_pct": 1015.6,
+      "benchmark_return_pct": 108.79,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-12-13",
+      "strategy": 1108146.67,
+      "benchmark": 210135.04,
+      "strategy_return_pct": 1008.15,
+      "benchmark_return_pct": 110.14,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-12-18",
+      "strategy": 1136078.82,
+      "benchmark": 205303.8,
+      "strategy_return_pct": 1036.08,
+      "benchmark_return_pct": 105.3,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-12-23",
+      "strategy": 1098546.55,
+      "benchmark": 201525.0,
+      "strategy_return_pct": 998.55,
+      "benchmark_return_pct": 101.53,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2024-12-27",
+      "strategy": 1094154.97,
+      "benchmark": 202033.63,
+      "strategy_return_pct": 994.15,
+      "benchmark_return_pct": 102.03,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-01-01",
+      "strategy": 1074750.53,
+      "benchmark": 201435.51,
+      "strategy_return_pct": 974.75,
+      "benchmark_return_pct": 101.44,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-01-06",
+      "strategy": 1060789.34,
+      "benchmark": 200359.31,
+      "strategy_return_pct": 960.79,
+      "benchmark_return_pct": 100.36,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-01-09",
+      "strategy": 1052047.99,
+      "benchmark": 199599.56,
+      "strategy_return_pct": 952.05,
+      "benchmark_return_pct": 99.6,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-01-14",
+      "strategy": 1025255.8,
+      "benchmark": 196626.34,
+      "strategy_return_pct": 925.26,
+      "benchmark_return_pct": 96.63,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-01-17",
+      "strategy": 1059413.47,
+      "benchmark": 196856.67,
+      "strategy_return_pct": 959.41,
+      "benchmark_return_pct": 96.86,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-01-22",
+      "strategy": 1032508.18,
+      "benchmark": 196450.71,
+      "strategy_return_pct": 932.51,
+      "benchmark_return_pct": 96.45,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-01-27",
+      "strategy": 990125.4,
+      "benchmark": 193683.22,
+      "strategy_return_pct": 890.13,
+      "benchmark_return_pct": 93.68,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-01-30",
+      "strategy": 994870.8,
+      "benchmark": 197249.48,
+      "strategy_return_pct": 894.87,
+      "benchmark_return_pct": 97.25,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-02-03",
+      "strategy": 977537.94,
+      "benchmark": 198195.88,
+      "strategy_return_pct": 877.54,
+      "benchmark_return_pct": 98.2,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-02-06",
+      "strategy": 1002530.39,
+      "benchmark": 200251.55,
+      "strategy_return_pct": 902.53,
+      "benchmark_return_pct": 100.25,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-02-11",
+      "strategy": 984538.2,
+      "benchmark": 195741.88,
+      "strategy_return_pct": 884.54,
+      "benchmark_return_pct": 95.74,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-02-14",
+      "strategy": 981415.67,
+      "benchmark": 194532.47,
+      "strategy_return_pct": 881.42,
+      "benchmark_return_pct": 94.53,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-02-19",
+      "strategy": 1001996.95,
+      "benchmark": 194563.44,
+      "strategy_return_pct": 902.0,
+      "benchmark_return_pct": 94.56,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-02-24",
+      "strategy": 1009620.48,
+      "benchmark": 191343.32,
+      "strategy_return_pct": 909.62,
+      "benchmark_return_pct": 91.34,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-02-28",
+      "strategy": 985221.47,
+      "benchmark": 187706.64,
+      "strategy_return_pct": 885.22,
+      "benchmark_return_pct": 87.71,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-03-05",
+      "strategy": 1041073.78,
+      "benchmark": 189510.36,
+      "strategy_return_pct": 941.07,
+      "benchmark_return_pct": 89.51,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-03-10",
+      "strategy": 1060863.87,
+      "benchmark": 190553.89,
+      "strategy_return_pct": 960.86,
+      "benchmark_return_pct": 90.55,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-03-13",
+      "strategy": 1052155.56,
+      "benchmark": 190018.54,
+      "strategy_return_pct": 952.16,
+      "benchmark_return_pct": 90.02,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-03-19",
+      "strategy": 1096614.37,
+      "benchmark": 194348.79,
+      "strategy_return_pct": 996.61,
+      "benchmark_return_pct": 94.35,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-03-24",
+      "strategy": 1110315.21,
+      "benchmark": 200718.18,
+      "strategy_return_pct": 1010.32,
+      "benchmark_return_pct": 100.72,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-03-27",
+      "strategy": 1097962.88,
+      "benchmark": 200154.83,
+      "strategy_return_pct": 997.96,
+      "benchmark_return_pct": 100.15,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-04-02",
+      "strategy": 1119875.76,
+      "benchmark": 197952.38,
+      "strategy_return_pct": 1019.88,
+      "benchmark_return_pct": 97.95,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-04-07",
+      "strategy": 1017080.15,
+      "benchmark": 188019.7,
+      "strategy_return_pct": 917.08,
+      "benchmark_return_pct": 88.02,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-04-11",
+      "strategy": 1035359.31,
+      "benchmark": 193678.14,
+      "strategy_return_pct": 935.36,
+      "benchmark_return_pct": 93.68,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-04-17",
+      "strategy": 1107362.02,
+      "benchmark": 202358.15,
+      "strategy_return_pct": 1007.36,
+      "benchmark_return_pct": 102.36,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-04-23",
+      "strategy": 1175040.73,
+      "benchmark": 206407.56,
+      "strategy_return_pct": 1075.04,
+      "benchmark_return_pct": 106.41,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-04-28",
+      "strategy": 1141954.83,
+      "benchmark": 206403.75,
+      "strategy_return_pct": 1041.95,
+      "benchmark_return_pct": 106.4,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-05-02",
+      "strategy": 1155123.66,
+      "benchmark": 206558.16,
+      "strategy_return_pct": 1055.12,
+      "benchmark_return_pct": 106.56,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2025-05-07",
+      "strategy": 1122717.73,
+      "benchmark": 207132.53,
+      "strategy_return_pct": 1022.72,
+      "benchmark_return_pct": 107.13,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-05-12",
+      "strategy": 1196551.75,
+      "benchmark": 211461.93,
+      "strategy_return_pct": 1096.55,
+      "benchmark_return_pct": 111.46,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-05-15",
+      "strategy": 1196903.37,
+      "benchmark": 212627.64,
+      "strategy_return_pct": 1096.9,
+      "benchmark_return_pct": 112.63,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-05-20",
+      "strategy": 1165325.61,
+      "benchmark": 209418.98,
+      "strategy_return_pct": 1065.33,
+      "benchmark_return_pct": 109.42,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-05-23",
+      "strategy": 1169077.9,
+      "benchmark": 210854.9,
+      "strategy_return_pct": 1069.08,
+      "benchmark_return_pct": 110.85,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-05-28",
+      "strategy": 1171021.98,
+      "benchmark": 210000.55,
+      "strategy_return_pct": 1071.02,
+      "benchmark_return_pct": 110.0,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-06-02",
+      "strategy": 1158397.82,
+      "benchmark": 209696.4,
+      "strategy_return_pct": 1058.4,
+      "benchmark_return_pct": 109.7,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-06-05",
+      "strategy": 1157458.78,
+      "benchmark": 209987.41,
+      "strategy_return_pct": 1057.46,
+      "benchmark_return_pct": 109.99,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-06-10",
+      "strategy": 1179764.74,
+      "benchmark": 212985.24,
+      "strategy_return_pct": 1079.76,
+      "benchmark_return_pct": 112.99,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-06-13",
+      "strategy": 1154735.12,
+      "benchmark": 209713.37,
+      "strategy_return_pct": 1054.74,
+      "benchmark_return_pct": 109.71,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-06-18",
+      "strategy": 1152376.58,
+      "benchmark": 210506.21,
+      "strategy_return_pct": 1052.38,
+      "benchmark_return_pct": 110.51,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-06-23",
+      "strategy": 1150483.23,
+      "benchmark": 211862.38,
+      "strategy_return_pct": 1050.48,
+      "benchmark_return_pct": 111.86,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-06-26",
+      "strategy": 1168904.18,
+      "benchmark": 216758.51,
+      "strategy_return_pct": 1068.9,
+      "benchmark_return_pct": 116.76,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-07-01",
+      "strategy": 1178629.14,
+      "benchmark": 216697.44,
+      "strategy_return_pct": 1078.63,
+      "benchmark_return_pct": 116.7,
+      "holding": "ENERGY"
+    },
+    {
+      "date": "2025-07-04",
+      "strategy": 1184280.8,
+      "benchmark": 216011.92,
+      "strategy_return_pct": 1084.28,
+      "benchmark_return_pct": 116.01,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-07-09",
+      "strategy": 1169594.69,
+      "benchmark": 216140.02,
+      "strategy_return_pct": 1069.59,
+      "benchmark_return_pct": 116.14,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-07-14",
+      "strategy": 1127046.56,
+      "benchmark": 212799.02,
+      "strategy_return_pct": 1027.05,
+      "benchmark_return_pct": 112.8,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-07-17",
+      "strategy": 1122960.07,
+      "benchmark": 213046.32,
+      "strategy_return_pct": 1022.96,
+      "benchmark_return_pct": 113.05,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-07-22",
+      "strategy": 1114504.21,
+      "benchmark": 212617.46,
+      "strategy_return_pct": 1014.5,
+      "benchmark_return_pct": 112.62,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-07-25",
+      "strategy": 1077156.97,
+      "benchmark": 210717.88,
+      "strategy_return_pct": 977.16,
+      "benchmark_return_pct": 110.72,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-07-30",
+      "strategy": 1072861.78,
+      "benchmark": 210871.03,
+      "strategy_return_pct": 972.86,
+      "benchmark_return_pct": 110.87,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-08-04",
+      "strategy": 1046631.43,
+      "benchmark": 209748.58,
+      "strategy_return_pct": 946.63,
+      "benchmark_return_pct": 109.75,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2025-08-07",
+      "strategy": 1030949.6,
+      "benchmark": 208674.51,
+      "strategy_return_pct": 930.95,
+      "benchmark_return_pct": 108.67,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2025-08-12",
+      "strategy": 1026026.81,
+      "benchmark": 207751.87,
+      "strategy_return_pct": 926.03,
+      "benchmark_return_pct": 107.75,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2025-08-18",
+      "strategy": 1031056.8,
+      "benchmark": 211056.81,
+      "strategy_return_pct": 931.06,
+      "benchmark_return_pct": 111.06,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2025-08-21",
+      "strategy": 1049677.8,
+      "benchmark": 212811.32,
+      "strategy_return_pct": 949.68,
+      "benchmark_return_pct": 112.81,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2025-08-26",
+      "strategy": 1047514.22,
+      "benchmark": 209657.81,
+      "strategy_return_pct": 947.51,
+      "benchmark_return_pct": 109.66,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2025-09-01",
+      "strategy": 1047294.22,
+      "benchmark": 208919.7,
+      "strategy_return_pct": 947.29,
+      "benchmark_return_pct": 108.92,
+      "holding": "FMCG"
+    },
+    {
+      "date": "2025-09-04",
+      "strategy": 1055505.77,
+      "benchmark": 209846.58,
+      "strategy_return_pct": 955.51,
+      "benchmark_return_pct": 109.85,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-09-09",
+      "strategy": 1068441.24,
+      "benchmark": 210985.98,
+      "strategy_return_pct": 968.44,
+      "benchmark_return_pct": 110.99,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-09-12",
+      "strategy": 1084839.55,
+      "benchmark": 213067.96,
+      "strategy_return_pct": 984.84,
+      "benchmark_return_pct": 113.07,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-09-17",
+      "strategy": 1089180.71,
+      "benchmark": 214902.63,
+      "strategy_return_pct": 989.18,
+      "benchmark_return_pct": 114.9,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-09-22",
+      "strategy": 1100809.87,
+      "benchmark": 213817.52,
+      "strategy_return_pct": 1000.81,
+      "benchmark_return_pct": 113.82,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-09-25",
+      "strategy": 1106676.64,
+      "benchmark": 211174.75,
+      "strategy_return_pct": 1006.68,
+      "benchmark_return_pct": 111.17,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-09-30",
+      "strategy": 1101803.29,
+      "benchmark": 208801.34,
+      "strategy_return_pct": 1001.8,
+      "benchmark_return_pct": 108.8,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-10-06",
+      "strategy": 1117976.62,
+      "benchmark": 212759.57,
+      "strategy_return_pct": 1017.98,
+      "benchmark_return_pct": 112.76,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-10-09",
+      "strategy": 1136712.94,
+      "benchmark": 213643.18,
+      "strategy_return_pct": 1036.71,
+      "benchmark_return_pct": 113.64,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-10-14",
+      "strategy": 1110435.98,
+      "benchmark": 213335.21,
+      "strategy_return_pct": 1010.44,
+      "benchmark_return_pct": 113.34,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-10-17",
+      "strategy": 1119491.31,
+      "benchmark": 218123.17,
+      "strategy_return_pct": 1019.49,
+      "benchmark_return_pct": 118.12,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-10-23",
+      "strategy": 1124161.64,
+      "benchmark": 219663.45,
+      "strategy_return_pct": 1024.16,
+      "benchmark_return_pct": 119.66,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-10-28",
+      "strategy": 1163055.72,
+      "benchmark": 220043.52,
+      "strategy_return_pct": 1063.06,
+      "benchmark_return_pct": 120.04,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-10-31",
+      "strategy": 1164806.44,
+      "benchmark": 218227.1,
+      "strategy_return_pct": 1064.81,
+      "benchmark_return_pct": 118.23,
+      "holding": "METAL"
+    },
+    {
+      "date": "2025-11-06",
+      "strategy": 1146955.9,
+      "benchmark": 216425.08,
+      "strategy_return_pct": 1046.96,
+      "benchmark_return_pct": 116.43,
+      "holding": "BANK"
+    },
+    {
+      "date": "2025-11-11",
+      "strategy": 1158591.98,
+      "benchmark": 217996.75,
+      "strategy_return_pct": 1058.59,
+      "benchmark_return_pct": 118.0,
+      "holding": "BANK"
+    },
+    {
+      "date": "2025-11-14",
+      "strategy": 1166152.81,
+      "benchmark": 219821.68,
+      "strategy_return_pct": 1066.15,
+      "benchmark_return_pct": 119.82,
+      "holding": "BANK"
+    },
+    {
+      "date": "2025-11-19",
+      "strategy": 1180072.69,
+      "benchmark": 221031.5,
+      "strategy_return_pct": 1080.07,
+      "benchmark_return_pct": 121.03,
+      "holding": "BANK"
+    },
+    {
+      "date": "2025-11-24",
+      "strategy": 1172486.02,
+      "benchmark": 220241.21,
+      "strategy_return_pct": 1072.49,
+      "benchmark_return_pct": 120.24,
+      "holding": "BANK"
+    },
+    {
+      "date": "2025-11-27",
+      "strategy": 1190460.3,
+      "benchmark": 222413.55,
+      "strategy_return_pct": 1090.46,
+      "benchmark_return_pct": 122.41,
+      "holding": "BANK"
+    },
+    {
+      "date": "2025-12-02",
+      "strategy": 1181223.55,
+      "benchmark": 220857.99,
+      "strategy_return_pct": 1081.22,
+      "benchmark_return_pct": 120.86,
+      "holding": "BANK"
+    },
+    {
+      "date": "2025-12-05",
+      "strategy": 1192097.34,
+      "benchmark": 222166.65,
+      "strategy_return_pct": 1092.1,
+      "benchmark_return_pct": 122.17,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-12-10",
+      "strategy": 1163953.25,
+      "benchmark": 218531.68,
+      "strategy_return_pct": 1063.95,
+      "benchmark_return_pct": 118.53,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-12-15",
+      "strategy": 1182322.83,
+      "benchmark": 220816.43,
+      "strategy_return_pct": 1082.32,
+      "benchmark_return_pct": 120.82,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-12-18",
+      "strategy": 1189932.15,
+      "benchmark": 219019.94,
+      "strategy_return_pct": 1089.93,
+      "benchmark_return_pct": 119.02,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-12-23",
+      "strategy": 1206575.21,
+      "benchmark": 222087.76,
+      "strategy_return_pct": 1106.58,
+      "benchmark_return_pct": 122.09,
+      "holding": "IT"
+    },
+    {
+      "date": "2025-12-29",
+      "strategy": 1179131.84,
+      "benchmark": 220093.58,
+      "strategy_return_pct": 1079.13,
+      "benchmark_return_pct": 120.09,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-01-01",
+      "strategy": 1175706.83,
+      "benchmark": 221828.15,
+      "strategy_return_pct": 1075.71,
+      "benchmark_return_pct": 121.83,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-01-06",
+      "strategy": 1166742.11,
+      "benchmark": 222100.9,
+      "strategy_return_pct": 1066.74,
+      "benchmark_return_pct": 122.1,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-01-09",
+      "strategy": 1123283.08,
+      "benchmark": 217897.93,
+      "strategy_return_pct": 1023.28,
+      "benchmark_return_pct": 117.9,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-01-14",
+      "strategy": 1180648.05,
+      "benchmark": 217747.75,
+      "strategy_return_pct": 1080.65,
+      "benchmark_return_pct": 117.75,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-01-20",
+      "strategy": 1151596.03,
+      "benchmark": 214073.32,
+      "strategy_return_pct": 1051.6,
+      "benchmark_return_pct": 114.07,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-01-23",
+      "strategy": 1162059.57,
+      "benchmark": 212513.53,
+      "strategy_return_pct": 1062.06,
+      "benchmark_return_pct": 112.51,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-01-29",
+      "strategy": 1263328.98,
+      "benchmark": 215654.74,
+      "strategy_return_pct": 1163.33,
+      "benchmark_return_pct": 115.65,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-02-03",
+      "strategy": 1204116.41,
+      "benchmark": 218273.34,
+      "strategy_return_pct": 1104.12,
+      "benchmark_return_pct": 118.27,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-02-06",
+      "strategy": 1209173.57,
+      "benchmark": 217986.15,
+      "strategy_return_pct": 1109.17,
+      "benchmark_return_pct": 117.99,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-02-11",
+      "strategy": 1242928.3,
+      "benchmark": 220193.27,
+      "strategy_return_pct": 1142.93,
+      "benchmark_return_pct": 120.19,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-02-16",
+      "strategy": 1210373.27,
+      "benchmark": 217893.25,
+      "strategy_return_pct": 1110.37,
+      "benchmark_return_pct": 117.89,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-02-19",
+      "strategy": 1198973.23,
+      "benchmark": 215955.5,
+      "strategy_return_pct": 1098.97,
+      "benchmark_return_pct": 115.96,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-02-24",
+      "strategy": 1222406.1,
+      "benchmark": 215703.53,
+      "strategy_return_pct": 1122.41,
+      "benchmark_return_pct": 115.7,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-02-27",
+      "strategy": 1239293.69,
+      "benchmark": 213616.46,
+      "strategy_return_pct": 1139.29,
+      "benchmark_return_pct": 113.62,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-03-05",
+      "strategy": 1219910.49,
+      "benchmark": 210114.67,
+      "strategy_return_pct": 1119.91,
+      "benchmark_return_pct": 110.11,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-03-10",
+      "strategy": 1201615.66,
+      "benchmark": 205836.17,
+      "strategy_return_pct": 1101.62,
+      "benchmark_return_pct": 105.84,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-03-13",
+      "strategy": 1143299.06,
+      "benchmark": 196414.65,
+      "strategy_return_pct": 1043.3,
+      "benchmark_return_pct": 96.41,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-03-18",
+      "strategy": 1177008.3,
+      "benchmark": 201731.6,
+      "strategy_return_pct": 1077.01,
+      "benchmark_return_pct": 101.73,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-03-23",
+      "strategy": 1099860.29,
+      "benchmark": 190998.03,
+      "strategy_return_pct": 999.86,
+      "benchmark_return_pct": 91.0,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-03-27",
+      "strategy": 1130051.3,
+      "benchmark": 193602.2,
+      "strategy_return_pct": 1030.05,
+      "benchmark_return_pct": 93.6,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-04-02",
+      "strategy": 1159913.17,
+      "benchmark": 192698.65,
+      "strategy_return_pct": 1059.91,
+      "benchmark_return_pct": 92.7,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-04-08",
+      "strategy": 1222922.5,
+      "benchmark": 203594.26,
+      "strategy_return_pct": 1122.92,
+      "benchmark_return_pct": 103.59,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-04-13",
+      "strategy": 1248268.92,
+      "benchmark": 202281.79,
+      "strategy_return_pct": 1148.27,
+      "benchmark_return_pct": 102.28,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-04-17",
+      "strategy": 1304024.07,
+      "benchmark": 206616.28,
+      "strategy_return_pct": 1204.02,
+      "benchmark_return_pct": 106.62,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-04-22",
+      "strategy": 1305259.27,
+      "benchmark": 206824.56,
+      "strategy_return_pct": 1205.26,
+      "benchmark_return_pct": 106.82,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-04-27",
+      "strategy": 1314234.5,
+      "benchmark": 204403.21,
+      "strategy_return_pct": 1214.23,
+      "benchmark_return_pct": 104.4,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-04-30",
+      "strategy": 1299270.64,
+      "benchmark": 203595.97,
+      "strategy_return_pct": 1199.27,
+      "benchmark_return_pct": 103.6,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-05-06",
+      "strategy": 1329289.52,
+      "benchmark": 206424.53,
+      "strategy_return_pct": 1229.29,
+      "benchmark_return_pct": 106.42,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-05-11",
+      "strategy": 1308721.84,
+      "benchmark": 202054.41,
+      "strategy_return_pct": 1208.72,
+      "benchmark_return_pct": 102.05,
+      "holding": "METAL"
+    },
+    {
+      "date": "2026-05-14",
+      "strategy": 1382498.96,
+      "benchmark": 200983.3,
+      "strategy_return_pct": 1282.5,
+      "benchmark_return_pct": 100.98,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-05-19",
+      "strategy": 1400312.99,
+      "benchmark": 200375.85,
+      "strategy_return_pct": 1300.31,
+      "benchmark_return_pct": 100.38,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-05-22",
+      "strategy": 1383788.4,
+      "benchmark": 201235.29,
+      "strategy_return_pct": 1283.79,
+      "benchmark_return_pct": 101.24,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-05-27",
+      "strategy": 1391787.45,
+      "benchmark": 202829.01,
+      "strategy_return_pct": 1291.79,
+      "benchmark_return_pct": 102.83,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-06-02",
+      "strategy": 1351823.44,
+      "benchmark": 199235.18,
+      "strategy_return_pct": 1251.82,
+      "benchmark_return_pct": 99.24,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-06-05",
+      "strategy": 1365436.67,
+      "benchmark": 198243.81,
+      "strategy_return_pct": 1265.44,
+      "benchmark_return_pct": 98.24,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-06-10",
+      "strategy": 1360520.66,
+      "benchmark": 196956.35,
+      "strategy_return_pct": 1260.52,
+      "benchmark_return_pct": 96.96,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-06-15",
+      "strategy": 1427188.75,
+      "benchmark": 202377.24,
+      "strategy_return_pct": 1327.19,
+      "benchmark_return_pct": 102.38,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2026-06-18",
+      "strategy": 1463133.86,
+      "benchmark": 205042.07,
+      "strategy_return_pct": 1363.13,
+      "benchmark_return_pct": 105.04,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2026-06-23",
+      "strategy": 1437891.99,
+      "benchmark": 202124.4,
+      "strategy_return_pct": 1337.89,
+      "benchmark_return_pct": 102.12,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2026-06-29",
+      "strategy": 1460725.57,
+      "benchmark": 203160.73,
+      "strategy_return_pct": 1360.73,
+      "benchmark_return_pct": 103.16,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": 1555003.4,
+      "benchmark": 205107.39,
+      "strategy_return_pct": 1455.0,
+      "benchmark_return_pct": 105.11,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2026-07-07",
+      "strategy": 1592286.31,
+      "benchmark": 206999.33,
+      "strategy_return_pct": 1492.29,
+      "benchmark_return_pct": 107.0,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2026-07-10",
+      "strategy": 1674344.53,
+      "benchmark": 205372.1,
+      "strategy_return_pct": 1574.34,
+      "benchmark_return_pct": 105.37,
+      "holding": "REALTY"
+    },
+    {
+      "date": "2026-07-15",
+      "strategy": 1627774.14,
+      "benchmark": 204282.75,
+      "strategy_return_pct": 1527.77,
+      "benchmark_return_pct": 104.28,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-07-20",
+      "strategy": 1663695.9,
+      "benchmark": 205640.19,
+      "strategy_return_pct": 1563.7,
+      "benchmark_return_pct": 105.64,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-07-23",
+      "strategy": 1627848.35,
+      "benchmark": 202510.43,
+      "strategy_return_pct": 1527.85,
+      "benchmark_return_pct": 102.51,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-07-28",
+      "strategy": 1735376.73,
+      "benchmark": 203492.45,
+      "strategy_return_pct": 1635.38,
+      "benchmark_return_pct": 103.49,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-07-31",
+      "strategy": 1751955.54,
+      "benchmark": 206871.22,
+      "strategy_return_pct": 1651.96,
+      "benchmark_return_pct": 106.87,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-08-05",
+      "strategy": 1791611.31,
+      "benchmark": 208916.3,
+      "strategy_return_pct": 1691.61,
+      "benchmark_return_pct": 108.92,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-08-10",
+      "strategy": 1804584.46,
+      "benchmark": 208569.73,
+      "strategy_return_pct": 1704.58,
+      "benchmark_return_pct": 108.57,
+      "holding": "IT"
+    },
+    {
+      "date": "2026-08-13",
+      "strategy": 1782476.07,
+      "benchmark": 206975.15,
+      "strategy_return_pct": 1682.48,
+      "benchmark_return_pct": 106.98,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-08-18",
+      "strategy": 1760775.19,
+      "benchmark": 204930.93,
+      "strategy_return_pct": 1660.78,
+      "benchmark_return_pct": 104.93,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-08-21",
+      "strategy": 1760631.56,
+      "benchmark": 205754.73,
+      "strategy_return_pct": 1660.63,
+      "benchmark_return_pct": 105.75,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-08-26",
+      "strategy": 1778435.13,
+      "benchmark": 205379.31,
+      "strategy_return_pct": 1678.44,
+      "benchmark_return_pct": 105.38,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-08-31",
+      "strategy": 1815848.8,
+      "benchmark": 204298.87,
+      "strategy_return_pct": 1715.85,
+      "benchmark_return_pct": 104.3,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-09-03",
+      "strategy": 1780595.84,
+      "benchmark": 202543.09,
+      "strategy_return_pct": 1680.6,
+      "benchmark_return_pct": 102.54,
+      "holding": "PHARMA"
+    },
+    {
+      "date": "2026-09-04",
+      "strategy": 1768536.42,
+      "benchmark": 202748.83,
+      "strategy_return_pct": 1668.54,
+      "benchmark_return_pct": 102.75,
+      "holding": "PHARMA"
+    }
+  ]
+}

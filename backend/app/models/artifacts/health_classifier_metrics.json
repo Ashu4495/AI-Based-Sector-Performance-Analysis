@@ -1,0 +1,158 @@
+{
+  "model_type": "RandomForestClassifier",
+  "hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": 6,
+    "min_samples_leaf": 10,
+    "class_weight": "balanced"
+  },
+  "classes": [
+    "Avoid",
+    "Buy",
+    "Neutral",
+    "Strong Avoid",
+    "Strong Buy"
+  ],
+  "n_samples": 13241,
+  "n_features": 22,
+  "feature_names": [
+    "return_1d",
+    "return_5d",
+    "return_20d",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_hist",
+    "roc_10",
+    "roc_20",
+    "volatility_5d",
+    "volatility_20d",
+    "atr_14",
+    "atr_ratio",
+    "price_to_ema20",
+    "price_to_sma50",
+    "ema20_to_sma50",
+    "rel_return_5d",
+    "rel_return_20d",
+    "ratio_to_benchmark",
+    "ratio_trend_20d",
+    "volume_pct_change_5d",
+    "volume_ratio_20d"
+  ],
+  "cv_folds": [
+    {
+      "fold": 1,
+      "train_size": 2211,
+      "test_size": 2206,
+      "accuracy": 0.25339981867633726,
+      "f1_macro": 0.20973742096138412,
+      "f1_weighted": 0.252026054449836
+    },
+    {
+      "fold": 2,
+      "train_size": 4417,
+      "test_size": 2206,
+      "accuracy": 0.2411604714415231,
+      "f1_macro": 0.23139277344495116,
+      "f1_weighted": 0.24917933991874067
+    },
+    {
+      "fold": 3,
+      "train_size": 6623,
+      "test_size": 2206,
+      "accuracy": 0.1799637352674524,
+      "f1_macro": 0.17005849379283294,
+      "f1_weighted": 0.16720503382846008
+    },
+    {
+      "fold": 4,
+      "train_size": 8829,
+      "test_size": 2206,
+      "accuracy": 0.25249320036264733,
+      "f1_macro": 0.23843897628223693,
+      "f1_weighted": 0.2520848507575919
+    },
+    {
+      "fold": 5,
+      "train_size": 11035,
+      "test_size": 2206,
+      "accuracy": 0.22756119673617406,
+      "f1_macro": 0.22332171264670878,
+      "f1_weighted": 0.22347631955871602
+    }
+  ],
+  "cv_mean_accuracy": 0.23091568449682684,
+  "cv_mean_f1_macro": 0.2145898754256228,
+  "overall_accuracy": 0.4433199909372404,
+  "overall_f1_macro": 0.4260828904887749,
+  "overall_f1_weighted": 0.4468634578304734,
+  "classification_report": {
+    "Avoid": {
+      "precision": 0.3562698053417836,
+      "recall": 0.35643115942028986,
+      "f1-score": 0.35635046411591575,
+      "support": 2208.0
+    },
+    "Buy": {
+      "precision": 0.4709748083242059,
+      "recall": 0.33699059561128525,
+      "f1-score": 0.39287345820009134,
+      "support": 2552.0
+    },
+    "Neutral": {
+      "precision": 0.3102409638554217,
+      "recall": 0.4418230563002681,
+      "f1-score": 0.3645211236452112,
+      "support": 1865.0
+    },
+    "Strong Avoid": {
+      "precision": 0.4083056478405316,
+      "recall": 0.5513683266038583,
+      "f1-score": 0.46917350639435007,
+      "support": 2229.0
+    },
+    "Strong Buy": {
+      "precision": 0.6129943502824858,
+      "recall": 0.49464326418965127,
+      "f1-score": 0.5474959000883058,
+      "support": 4387.0
+    },
+    "accuracy": 0.4433199909372404,
+    "macro avg": {
+      "precision": 0.4317571151288857,
+      "recall": 0.43625128042507055,
+      "f1-score": 0.4260828904887749,
+      "support": 13241.0
+    },
+    "weighted avg": {
+      "precision": 0.46571183010000783,
+      "recall": 0.4433199909372404,
+      "f1-score": 0.4468634578304734,
+      "support": 13241.0
+    }
+  },
+  "feature_importances": {
+    "return_1d": 0.006061284205293853,
+    "return_5d": 0.016211114543896028,
+    "return_20d": 0.0269931040929525,
+    "rsi_14": 0.03083479568308054,
+    "macd": 0.05187609031027087,
+    "macd_signal": 0.04714795279469823,
+    "macd_hist": 0.04296543259673459,
+    "roc_10": 0.033566459602303055,
+    "roc_20": 0.025725151949707845,
+    "volatility_5d": 0.03782744945081951,
+    "volatility_20d": 0.12477330026515325,
+    "atr_14": 0.09462233434407638,
+    "atr_ratio": 0.1393755072518156,
+    "price_to_ema20": 0.025086081022974115,
+    "price_to_sma50": 0.033290508939079026,
+    "ema20_to_sma50": 0.04590110481453275,
+    "rel_return_5d": 0.013950772362425156,
+    "rel_return_20d": 0.03877171425100772,
+    "ratio_to_benchmark": 0.11158879637434242,
+    "ratio_trend_20d": 0.026573335614982603,
+    "volume_pct_change_5d": 0.00928559443395883,
+    "volume_ratio_20d": 0.01757211509589514
+  }
+}
