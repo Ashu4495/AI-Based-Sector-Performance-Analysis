@@ -1,12 +1,13 @@
 
 
-# 1. HERO SECTION
+# 📈 MarketPulse AI — AI-Driven NSE Sectoral Analysis & Forecasting
 
-# MarketPulse AI
+![Frontend](https://img.shields.io/badge/FRONTEND-REACT_%26_VITE-000000?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Backend](https://img.shields.io/badge/BACKEND-FASTAPI_%26_PYTHON-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![ML](https://img.shields.io/badge/ML-SCIKIT--LEARN_RANDOM_FOREST-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Data](https://img.shields.io/badge/DATA-YFINANCE_%26_PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-An end-to-end AI-driven NSE sectoral index analysis, forecasting, and health classification dashboard.
-
-`Python` `FastAPI` `React` `Vite` `scikit-learn` `Machine Learning`
+An end-to-end AI-driven NSE sectoral index analysis, forecasting, and health classification dashboard designed for quantitative researchers and retail investors. MarketPulse AI combines technical feature engineering, machine learning sector health classification, short-term return forecasting, and TreeSHAP explainability into a seamless analytics platform.
 
 * **GitHub Repository**: [Ashu4495/AI-Based-Sector-Performance-Analysis](https://github.com/Ashu4495/AI-Based-Sector-Performance-Analysis)
 
