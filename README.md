@@ -261,40 +261,6 @@ python -m backend.app.backtest.rotation_strategy
 6. Analyze the SHAP feature drivers panel to understand *why* the AI assigned a specific health label based on current technical indicators.
 7. Switch between Light and Dark mode using the toggle in the navigation bar.
 
----
-
-# 18. API DOCUMENTATION
-
-The FastAPI backend provides structured REST endpoints. 
-
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/healthcheck` | Returns backend system status. |
-| `GET` | `/sectors` | Returns the full leaderboard of all 8 sectors sorted by health classification. |
-| `GET` | `/sectors/{sector}` | Returns detailed historical series, ML forecast, and technical overlays for a specific sector. |
-| `GET` | `/forecast/{sector}` | Returns only the 5-day regression forecast and confidence intervals. |
-| `GET` | `/health/{sector}` | Returns the health classification label and top SHAP feature drivers. |
-| `GET` | `/backtest` | Returns historical sector rotation backtest equity curves vs. the NIFTY 50 benchmark. |
-
-You can view the full interactive Swagger documentation by navigating to `http://127.0.0.1:8000/docs` when the backend is running.
-
----
-
-# 19. DATABASE
-
-This project relies on flat-file storage for simplicity and speed. Data is structured as follows:
-
-| File | Format | Description |
-| :--- | :--- | :--- |
-| `raw_sectors.csv` | CSV | Raw daily OHLCV data directly from Yahoo Finance. |
-| `clean_sectors.csv` | CSV | Cleaned, forward-filled price data aligned to trading days. |
-| `features.csv` | CSV | Fully engineered dataset containing all 22 technical indicators used for ML training. |
-| `backtest_results.json` | JSON | Serialized equity curves and metrics from the strategy simulator. |
-
-All files are stored locally in the `backend/app/data/storage/` directory.
-
----
-
 
 ---
 
