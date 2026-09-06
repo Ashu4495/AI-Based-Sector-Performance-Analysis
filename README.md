@@ -1,56 +1,419 @@
-# MarketPulse AI — AI-Driven NSE Sector Performance & Health Classification Dashboard
+---
 
-MarketPulse AI is an end-to-end AI-driven NSE sectoral index analysis, forecasting, and health classification dashboard with explainability and backtested sector rotation strategies.
+# 1. HERO SECTION
 
-## Overview
-- **Data Source**: `yfinance` exclusively for 8 NSE sectors + NIFTY 50 benchmark.
-- **Forecasting Model**: Linear / Ridge Regression on lagged technical features predicting near-term return.
-- **Health Classification Model**: `RandomForestClassifier` with TreeSHAP explainability mapping sectors to discrete labels: `Strong Buy`, `Buy`, `Neutral`, `Avoid`, `Strong Avoid`.
-- **Strategy Backtest**: Monthly sector-rotation simulation benchmarked against NIFTY 50 buy-and-hold.
-- **Frontend**: Custom React (Vite + Tailwind CSS) with light & dark analyst desk themes, dynamic ticker strip, interactive charts, and SHAP attribution panel.
-- **Backend API**: High-performance FastAPI application serving structured JSON responses with comprehensive error handling.
+# MarketPulse AI
 
-## Running Locally
+An end-to-end AI-driven NSE sectoral index analysis, forecasting, and health classification dashboard.
 
-### 1. Start the Backend API
+`Python` `FastAPI` `React` `Vite` `scikit-learn` `Machine Learning`
+
+* **Live Demo**: `Not provided`
+* **GitHub Repository**: [Ashu4495/AI-Based-Sector-Performance-Analysis](https://github.com/Ashu4495/AI-Based-Sector-Performance-Analysis)
+* **Documentation**: `Not provided`
+* **Demo Video**: `Not provided`
+
+---
+
+# 2. PROJECT OVERVIEW
+
+MarketPulse AI is a comprehensive data pipeline, machine learning engine, and modern web dashboard designed to analyze and predict the performance of key sectors within the National Stock Exchange of India (NSE). It evaluates the "health" of sectors (e.g., IT, Banking, Pharma) using classification models and forecasts their short-term returns using regression models, providing transparent explainability through SHAP (SHapley Additive exPlanations).
+
+This tool is designed for retail investors, quantitative analysts, and financial researchers who want data-driven, explainable insights into sector rotation rather than relying purely on intuition.
+
+---
+
+# 3. PROBLEM STATEMENT
+
+Retail investors and traders often struggle to identify which market sectors are currently strong, weak, or about to rotate. Existing solutions typically provide raw technical charts without actionable, synthesized insights. Furthermore, many modern AI-driven financial tools act as "black boxes" where predictions are given without explaining *why* a sector is deemed bullish or bearish. This lack of transparency makes it difficult for users to trust and act upon the predictions.
+
+---
+
+# 4. SOLUTION
+
+MarketPulse AI solves this by ingesting daily historical data for 8 major NSE sectors and engineering a robust set of technical features (RSI, MACD, Moving Averages, Volatility). It applies a `RandomForestClassifier` to map current technical conditions into discrete health labels (e.g., "Strong Buy", "Neutral", "Strong Avoid") and uses a `Ridge Regression` model to forecast 5-day directional returns. 
+
+Crucially, the solution integrates TreeSHAP to decode the model's logic, showing users exactly which technical indicators drove the current health classification. All of this is served via a high-performance FastAPI backend to a sleek, analyst-style React dashboard.
+
+---
+
+# 5. KEY FEATURES
+
+* ✅ **Daily Data Ingestion**: Automated fetch pipelines utilizing `yfinance` for NSE sectors and the NIFTY 50 benchmark.
+* ✅ **Sector Health Classification**: Classifies sectors into 5 discrete health buckets using Random Forest.
+* ✅ **Short-Term Forecasting**: Predicts 5-day sector returns using Ridge Regression.
+* ✅ **Model Explainability**: Explains the top feature drivers (e.g., RSI, Volatility) for every prediction using SHAP.
+* ✅ **Strategy Backtesting**: Simulates a monthly sector-rotation strategy and benchmarks it against the NIFTY 50 index.
+* ✅ **Interactive Dashboard**: Modern React UI featuring dynamic ticker strips, historical price charts with indicator overlays, and light/dark "trading desk" themes.
+
+---
+
+# 6. DEMO
+
+* 🌐 Live Demo: `Not provided`
+* 🎥 Demo Video: `Not provided`
+* 📸 Screenshots: `Not provided`
+
+---
+
+# 7. SYSTEM ARCHITECTURE
+
+```mermaid
+flowchart TD
+    YahooFinance[(Yahoo Finance)] --> |Historical Data| DataIngestion[Data Ingestion Script]
+    DataIngestion --> CSVStorage[(CSV Feature Store)]
+    CSVStorage --> FeatureEngineering[Feature Engineering]
+    FeatureEngineering --> MLModels[ML Training Pipeline]
+    MLModels --> |Trained Models| FastAPI[FastAPI Backend]
+    CSVStorage --> |Historical Data| FastAPI
+    FastAPI <--> |REST API| React[React Frontend]
+    React --> User((User))
+```
+
+---
+
+# 8. WORKFLOW
+
+1. The data pipeline fetches historical OHLCV data for 8 NSE sectors from Yahoo Finance.
+2. The feature engineering module calculates technical indicators (EMA, SMA, RSI, MACD) and relative performance metrics.
+3. The Machine Learning models are trained offline on the historical features.
+4. The user opens the React dashboard.
+5. The frontend requests the latest sector leaderboard and forecasts from the FastAPI backend.
+6. The backend loads the pre-trained ML models, scores the latest data, and calculates SHAP values.
+7. The results, including predictions and top feature drivers, are returned as JSON and rendered on the UI.
+
+---
+
+# 9. TECHNOLOGY STACK
+
+| Category       | Technology |
+| -------------- | ---------- |
+| Frontend       | React, Vite, Tailwind CSS, Recharts, Lucide React |
+| Backend        | Python, FastAPI, Uvicorn, Pydantic |
+| Database       | File-based CSV & JSON Storage |
+| AI/ML          | scikit-learn, SHAP, Pandas, NumPy, pandas-ta |
+| APIs           | RESTful API |
+| Authentication | `Not implemented` |
+| Deployment     | Render (Backend), Vercel/Netlify (Frontend) |
+| Tools          | Git, pytest |
+
+---
+
+# 10. AI / MACHINE LEARNING SECTION
+
+### Dataset
+* **Source**: Yahoo Finance (`yfinance`)
+* **Assets**: 8 major NSE sector indices (e.g., NIFTY IT, NIFTY BANK) and NIFTY 50 benchmark.
+* **Features**: 22 engineered technical features (e.g., `rsi_14`, `macd`, `volatility_20d`, `price_to_ema20`, `ratio_to_benchmark`).
+* **Target Variables**: 
+  - Classification: Discrete health labels (Avoid, Buy, Neutral, Strong Avoid, Strong Buy).
+  - Regression: 5-day continuous return.
+
+### Preprocessing
+* Missing value forward-filling and interpolation.
+* Technical indicator computation using `pandas-ta`.
+* Scaling applied as required by the Ridge Regression pipeline.
+
+### Model 1: Health Classifier
+* **Algorithm**: `RandomForestClassifier`
+* **Hyperparameters**: `n_estimators=150`, `max_depth=6`, `min_samples_leaf=10`, `class_weight='balanced'`
+
+| Metric    |        Score |
+| --------- | -----------: |
+| Accuracy  | 44.33% |
+| F1 Score (Weighted) | 44.68% |
+
+*(Note: In the context of predicting volatile 5-class financial market directions, a 44% accuracy significantly outperforms the 20% random baseline).*
+
+### Model 2: Return Forecaster
+* **Algorithm**: `Ridge Regression`
+* **Hyperparameters**: `alpha=10.0`
+
+| Metric    |        Score |
+| --------- | -----------: |
+| Mean Absolute Error (MAE) | 0.0244 (2.44%) |
+| Directional Accuracy | 54.77% |
+
+---
+
+# 11. GENERATIVE AI / LLM SECTION
+
+`Not implemented` (This project relies strictly on traditional Machine Learning and statistical models).
+
+---
+
+# 12. PROJECT STRUCTURE
+
+```text
+AI-Based-Sector-Performance-Analysis/
+│
+├── backend/
+│   ├── app/
+│   │   ├── api/             # FastAPI REST endpoints
+│   │   ├── backtest/        # Sector rotation strategy simulator
+│   │   ├── core/            # Configuration and logging
+│   │   ├── data/            # Data fetching and storage
+│   │   ├── features/        # Technical indicator engineering
+│   │   ├── models/          # ML training, prediction, and SHAP logic
+│   │   ├── schemas/         # Pydantic response models
+│   │   └── main.py          # FastAPI application entry point
+│   ├── tests/               # Pytest suite
+│   └── requirements.txt     # Duplicate requirements (removed in cleanup)
+│
+├── frontend/
+│   ├── public/              # Static assets (logos, icons)
+│   ├── src/
+│   │   ├── api/             # API client wrapper
+│   │   ├── components/      # Reusable React components (Charts, Navbar)
+│   │   ├── context/         # Theme context
+│   │   ├── pages/           # Application views (Dashboard, SectorDetail)
+│   │   ├── styles/          # CSS and Tailwind tokens
+│   │   ├── App.jsx          # Main React router/state wrapper
+│   │   └── main.jsx         # React entry point
+│   ├── package.json         # Frontend dependencies
+│   └── vite.config.js       # Vite bundler config
+│
+├── .gitignore
+├── Procfile                 # Deployment configuration for Render/Heroku
+├── README.md
+├── pytest.ini
+├── requirements.txt         # Root Python dependencies
+└── runtime.txt              # Python runtime specification
+```
+
+---
+
+# 13. REQUIREMENTS
+
+* Python 3.11.x
+* Node.js 18+ and `npm`
+* Internet connection (for `yfinance` data fetching)
+
+---
+
+# 14. INSTALLATION
+
+### Clone repository
+
 ```bash
-# From the root directory:
+git clone https://github.com/Ashu4495/AI-Based-Sector-Performance-Analysis.git
+cd AI-Based-Sector-Performance-Analysis
+```
+
+### Install Backend Dependencies (Python)
+
+```bash
 python -m venv .venv
-.venv\Scripts\activate  # (or source .venv/bin/activate on Mac/Linux)
+# On Windows:
+.venv\Scripts\activate
+# On Mac/Linux:
+source .venv/bin/activate
+
 pip install -r requirements.txt
+```
+
+### Install Frontend Dependencies (Node.js)
+
+```bash
+cd frontend
+npm install
+```
+
+---
+
+# 15. ENVIRONMENT VARIABLES
+
+`Optional`
+
+If you are running the frontend entirely separate from the backend (e.g., in a production deployment like Vercel), you must provide the backend API URL to the frontend environment.
+
+Create a `.env` file in the `frontend/` directory:
+
+```env
+VITE_API_URL=https://your-production-backend-url.com
+```
+
+---
+
+# 16. RUNNING THE PROJECT
+
+### Development
+
+To run the Backend:
+```bash
+# From the root directory (ensure venv is activated)
 uvicorn backend.app.main:app --port 8000 --reload
 ```
 
-### 2. Start the Frontend Application
+To run the Frontend:
 ```bash
-# From the root directory:
+# Open a new terminal, navigate to the frontend directory
 cd frontend
-npm install
 npm run dev
 ```
 
-### 3. (Optional) Re-run Data Ingestion or Model Retraining
+### Data Pipeline & Model Retraining (Optional)
+If you wish to fetch the absolute latest data and retrain the models locally:
 ```bash
-# Ingest fresh data
+# From the root directory:
 python -m backend.app.data.clean
-# Compute features
 python -m backend.app.features.engineer
-# Retrain models
 python -m backend.app.models.train_forecast
 python -m backend.app.models.train_classifier
-# Re-run rotation backtest
 python -m backend.app.backtest.rotation_strategy
 ```
 
-## Deployment Options (Free)
+---
 
-### Backend (Render / Railway)
-- Use **Render** for a free API hosting (with `requirements.txt` and `Procfile` already configured in this repo).
-- Just link this repository to Render as a Web Service. Render will use the `Procfile` to start the FastAPI server.
-- The `runtime.txt` will enforce the correct Python version.
+# 17. USAGE
 
-### Frontend (Vercel / Netlify / Railway)
-- For the frontend, deploy the `/frontend` directory to **Vercel** or **Netlify** (completely free!).
-- Add the `VITE_API_URL` environment variable pointing to your deployed backend URL (e.g., `https://your-api.onrender.com`).
-- Build command: `npm run build`
-- Output directory: `dist`
+1. Start both the backend and frontend servers.
+2. Open your browser to the local Vite URL (usually `http://localhost:5173`).
+3. View the **Landing Page** to see the overall market pulse.
+4. Click "Explore Dashboard" to view the **Leaderboard**, which ranks sectors by their ML-predicted health label and momentum.
+5. Click on any specific sector (e.g., "NIFTY IT") to view the **Sector Detail** page.
+6. Analyze the SHAP feature drivers panel to understand *why* the AI assigned a specific health label based on current technical indicators.
+7. Switch between Light and Dark mode using the toggle in the navigation bar.
+
+---
+
+# 18. API DOCUMENTATION
+
+The FastAPI backend provides structured REST endpoints. 
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/healthcheck` | Returns backend system status. |
+| `GET` | `/sectors` | Returns the full leaderboard of all 8 sectors sorted by health classification. |
+| `GET` | `/sectors/{sector}` | Returns detailed historical series, ML forecast, and technical overlays for a specific sector. |
+| `GET` | `/forecast/{sector}` | Returns only the 5-day regression forecast and confidence intervals. |
+| `GET` | `/health/{sector}` | Returns the health classification label and top SHAP feature drivers. |
+| `GET` | `/backtest` | Returns historical sector rotation backtest equity curves vs. the NIFTY 50 benchmark. |
+
+You can view the full interactive Swagger documentation by navigating to `http://127.0.0.1:8000/docs` when the backend is running.
+
+---
+
+# 19. DATABASE
+
+This project relies on flat-file storage for simplicity and speed. Data is structured as follows:
+
+| File | Format | Description |
+| :--- | :--- | :--- |
+| `raw_sectors.csv` | CSV | Raw daily OHLCV data directly from Yahoo Finance. |
+| `clean_sectors.csv` | CSV | Cleaned, forward-filled price data aligned to trading days. |
+| `features.csv` | CSV | Fully engineered dataset containing all 22 technical indicators used for ML training. |
+| `backtest_results.json` | JSON | Serialized equity curves and metrics from the strategy simulator. |
+
+All files are stored locally in the `backend/app/data/storage/` directory.
+
+---
+
+# 20. SCREENSHOTS
+
+* `Not provided`
+
+---
+
+# 21. TESTING
+
+The project utilizes `pytest` for backend unit and integration testing.
+
+```bash
+# Run all tests from the root directory
+pytest -v
+```
+
+---
+
+# 22. SECURITY
+
+* **CORS**: Cross-Origin Resource Sharing is enabled in FastAPI (`CORSMiddleware`) to allow the React frontend to communicate with the API.
+* **Error Handling**: A global exception handler ensures internal stack traces are never leaked to the client, returning standardized 500 error messages instead.
+* **Authentication**: `Not implemented` (This is a public informational dashboard).
+
+---
+
+# 23. PERFORMANCE
+
+* **Fast Startup**: The FastAPI `lifespan` context manager pre-loads all serialized ML model artifacts (`.pkl`/`.joblib`) and SHAP explainers into memory during startup. This eliminates cold-start penalties and ensures API responses are served in milliseconds.
+* **Statelessness**: The API is entirely stateless and can be horizontally scaled if deployed behind a load balancer.
+
+---
+
+# 24. LIMITATIONS
+
+* **Dataset Constraints**: The models are currently trained exclusively on daily timeframe data (EOD) and are not suitable for intraday trading.
+* **Market Shocks**: Traditional technical indicators and historical regression models often fail to predict exogenous macro-economic shocks (e.g., sudden interest rate changes, geopolitical events).
+* **Latency**: Data is sourced from Yahoo Finance, which may have a slight delay compared to direct institutional exchange feeds.
+
+---
+
+# 25. FUTURE ENHANCEMENTS
+
+* [ ] Add real-time intraday data streaming via WebSockets.
+* [ ] Incorporate Natural Language Processing (NLP) sentiment analysis on daily financial news for each sector.
+* [ ] Implement user authentication to allow users to save custom portfolios and watchlists.
+* [ ] Expand coverage to global indices (e.g., S&P 500 sectors).
+
+---
+
+# 26. ROADMAP
+
+### Phase 1
+* Setup data ingestion pipeline and technical feature engineering.
+* Train initial baseline predictive models.
+
+### Phase 2 (Completed)
+* Develop React dashboard.
+* Integrate SHAP explainability into the API.
+* Finalize Sector Rotation backtesting engine.
+
+### Phase 3
+* Cloud deployment optimizations.
+* Addition of macroeconomic indicators to the feature store.
+
+---
+
+# 27. CONTRIBUTING
+
+Contributions are welcome! If you'd like to improve the models, add new technical indicators, or enhance the dashboard:
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and write tests if applicable.
+4. Ensure all tests pass by running `pytest`.
+5. Commit your changes: `git commit -m 'Add some feature'`
+6. Push the branch: `git push origin feature/your-feature-name`
+7. Open a Pull Request.
+
+---
+
+# 28. LICENSE
+
+`License has not been specified.`
+
+---
+
+# 29. AUTHOR
+
+**Ashu4495**
+* GitHub: [Ashu4495](https://github.com/Ashu4495)
+* LinkedIn: `Not provided`
+* Portfolio: `Not provided`
+* Email: `Not provided`
+
+---
+
+# 30. ACKNOWLEDGEMENTS
+
+* Data provided by [Yahoo Finance](https://finance.yahoo.com/) via the `yfinance` library.
+* Machine learning modeling powered by [scikit-learn](https://scikit-learn.org/).
+* Model explainability driven by [SHAP (SHapley Additive exPlanations)](https://shap.readthedocs.io/).
+* Technical indicators computed using [pandas-ta](https://github.com/twopirllc/pandas-ta).
+
+---
+
+# 31. SUPPORT
+
+If you find this project useful for your financial research or trading analysis, consider giving the repository a ⭐!
