@@ -1,5 +1,5 @@
 """
-Health Routes for SectorAI API.
+Health Routes for MarketPulse AI API.
 Serves categorical health labels (Strong Buy -> Strong Avoid) and top SHAP feature drivers.
 """
 

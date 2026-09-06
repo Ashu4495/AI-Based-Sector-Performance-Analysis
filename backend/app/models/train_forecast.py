@@ -1,5 +1,5 @@
 """
-Forecasting Model Training Module for SectorAI.
+Forecasting Model Training Module for MarketPulse AI.
 Trains a Ridge Regression model on historical technical and relative-strength features
 to predict near-term 5-day sector returns.
 Uses strict time-series chronological cross-validation (no random shuffling).

@@ -1,5 +1,5 @@
 """
-Health Classification Model Training Module for SectorAI.
+Health Classification Model Training Module for MarketPulse AI.
 Trains a RandomForestClassifier to classify sector health into 5 discrete labels:
 Strong Buy, Buy, Neutral, Avoid, Strong Avoid.
 Uses time-series validation and evaluates per-class metrics.

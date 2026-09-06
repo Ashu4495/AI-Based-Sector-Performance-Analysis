@@ -1,5 +1,5 @@
 """
-Backtest Routes for SectorAI API.
+Backtest Routes for MarketPulse AI API.
 Serves strategy vs benchmark backtest metrics, rebalancing logs, and equity curves.
 """
 

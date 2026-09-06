@@ -1,5 +1,5 @@
 """
-Feature Engineering Module for SectorAI.
+Feature Engineering Module for MarketPulse AI.
 Transforms cleaned OHLCV data into a structured feature store with:
 - Technical indicators (RSI, MACD, ROC, ATR, OBV, Moving Averages)
 - Benchmark-relative strength metrics vs. NIFTY 50

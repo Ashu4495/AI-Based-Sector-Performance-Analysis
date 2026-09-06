@@ -1,5 +1,5 @@
 """
-Inference & Prediction Utilities for SectorAI.
+Inference & Prediction Utilities for MarketPulse AI.
 Loads saved model artifacts (Ridge Forecast & RandomForest Health Classifier)
 and exposes real-time inference functions for individual sectors and the full leaderboard.
 """

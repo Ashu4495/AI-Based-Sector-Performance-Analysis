@@ -1,5 +1,5 @@
 """
-Unit tests for SectorAI Backtest Engine (backend/app/backtest/rotation_strategy.py).
+Unit tests for MarketPulse AI Backtest Engine (backend/app/backtest/rotation_strategy.py).
 Tests sector rotation logic, equity curve tracking, and financial performance metrics.
 """
 

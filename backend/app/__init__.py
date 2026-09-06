@@ -1,1 +1,1 @@
-"""SectorAI Backend Application Package."""
+"""MarketPulse AI Backend Application Package."""

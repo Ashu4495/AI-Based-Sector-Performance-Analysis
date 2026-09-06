@@ -1,5 +1,5 @@
 """
-SectorAI FastAPI Application Entrypoint.
+MarketPulse AI FastAPI Application Entrypoint.
 Exposes REST API endpoints serving sector leaderboard, details, forecasts, health classifications, and backtests.
 """
 
@@ -21,7 +21,7 @@ from backend.app.models.train_forecast import load_forecast_model
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Preloads model artifacts on application startup for fast response times."""
-    logger.info("Starting SectorAI API server...")
+    logger.info("Starting MarketPulse AI API server...")
     try:
         logger.info("Pre-loading ML model artifacts into memory...")
         load_forecast_model()
@@ -31,11 +31,11 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning(f"Note on startup artifact pre-loading: {str(e)}")
     yield
-    logger.info("Shutting down SectorAI API server...")
+    logger.info("Shutting down MarketPulse AI API server...")
 
 
 app = FastAPI(
-    title="SectorAI API",
+    title="MarketPulse AI API",
     description="AI-Driven NSE Sector Performance Analysis & Health Classification API",
     version="1.0.0",
     lifespan=lifespan
@@ -63,7 +63,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 # Health check endpoint
 @app.get("/healthcheck", tags=["System"])
 def healthcheck():
-    return {"status": "healthy", "service": "SectorAI Backend API"}
+    return {"status": "healthy", "service": "MarketPulse AI Backend API"}
 
 
 # Include Routers

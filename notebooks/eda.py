@@ -1,5 +1,5 @@
 """
-Exploratory Data Analysis (EDA) Script for SectorAI.
+Exploratory Data Analysis (EDA) Script for MarketPulse AI.
 Generates summary statistics, correlation matrices, volatility profiles,
 and relative performance rankings across all 8 NSE sectors vs NIFTY 50.
 """

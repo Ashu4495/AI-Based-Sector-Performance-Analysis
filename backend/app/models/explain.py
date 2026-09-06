@@ -1,5 +1,5 @@
 """
-SHAP Explainability Module for SectorAI.
+SHAP Explainability Module for MarketPulse AI.
 Uses TreeExplainer to compute feature attributions for the RandomForestClassifier predictions.
 Maps raw feature names to human-readable descriptions and extracts top positive/negative drivers.
 """

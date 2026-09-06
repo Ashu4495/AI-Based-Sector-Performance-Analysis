@@ -1,5 +1,5 @@
 """
-Data Cleaning & Alignment Module for SectorAI.
+Data Cleaning & Alignment Module for MarketPulse AI.
 Cleans raw OHLCV sector data, aligns trading dates across all 8 sectors and NIFTY 50,
 handles short-gap forward fills (<=2 days), filters out invalid values, and validates integrity.
 """

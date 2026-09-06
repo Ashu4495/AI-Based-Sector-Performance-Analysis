@@ -1,5 +1,5 @@
 """
-Unit tests for SectorAI Data Pipeline (fetch and clean modules).
+Unit tests for MarketPulse AI Data Pipeline (fetch and clean modules).
 """
 
 from datetime import datetime

@@ -1,5 +1,5 @@
 """
-Forecast Routes for SectorAI API.
+Forecast Routes for MarketPulse AI API.
 Serves 5-day regression forecasts and confidence ranges per sector.
 """
 

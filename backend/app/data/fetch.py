@@ -1,5 +1,5 @@
 """
-Data Fetcher Module for SectorAI.
+Data Fetcher Module for MarketPulse AI.
 Pulls historical OHLCV data for all 8 NSE sectors and the NIFTY 50 benchmark via yfinance.
 Implements robust error handling, caching, and multi-index column flattening.
 """

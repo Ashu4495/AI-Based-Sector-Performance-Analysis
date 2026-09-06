@@ -7,7 +7,6 @@ export default function Navbar({ activePage, setActivePage, selectedSector }) {
     { id: 'landing', label: 'Overview', icon: Compass },
     { id: 'dashboard', label: 'Sector Leaderboard', icon: BarChart3 },
     { id: 'detail', label: selectedSector ? `${selectedSector} Deep Dive` : 'Sector Detail', icon: LineChart },
-    { id: 'backtest', label: 'Rotation Backtest', icon: Activity },
   ];
 
   return (
@@ -18,12 +17,10 @@ export default function Navbar({ activePage, setActivePage, selectedSector }) {
           onClick={() => setActivePage('landing')}
           className="flex items-center gap-3 cursor-pointer select-none group"
         >
-          <div className="w-7 h-7 rounded border border-brand bg-brand-subtle flex items-center justify-center">
-            <span className="font-display font-bold text-base text-brand">S</span>
-          </div>
+          <img src="/logo.png" alt="MarketPluse AI Logo" className="w-8 h-8 object-contain" />
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
-              <span className="font-display text-lg font-bold tracking-tight text-primary">SectorAI</span>
+              <span className="font-display text-lg font-bold tracking-tight text-primary">MarketPluse AI</span>
               <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-surface border border-subtle text-muted">
                 NSE ML
               </span>
@@ -88,3 +85,5 @@ export default function Navbar({ activePage, setActivePage, selectedSector }) {
     </header>
   );
 }
+
+

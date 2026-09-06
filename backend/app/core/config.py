@@ -1,5 +1,5 @@
 """
-Configuration module for SectorAI.
+Configuration module for MarketPulse AI.
 Defines sector mapping, tickers, paths, and application settings.
 """
 

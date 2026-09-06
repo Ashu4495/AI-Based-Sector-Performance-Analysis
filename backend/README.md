@@ -1,6 +1,6 @@
-# SectorAI Backend
+# MarketPulse AI Backend
 
-FastAPI application, data ingestion, feature engineering, and ML model inference for SectorAI.
+FastAPI application, data ingestion, feature engineering, and ML model inference for MarketPulse AI.
 
 ## Architecture
 - `app/api/`: REST endpoints (`/sectors`, `/sectors/{id}`, `/forecast/{sector}`, `/health/{sector}`, `/backtest`)

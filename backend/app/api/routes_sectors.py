@@ -1,5 +1,5 @@
 """
-Sector Routes for SectorAI API.
+Sector Routes for MarketPulse AI API.
 Serves sector leaderboard and detailed historical series with indicator overlays.
 """
 

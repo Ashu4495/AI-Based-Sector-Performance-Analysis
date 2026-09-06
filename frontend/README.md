@@ -1,4 +1,4 @@
-# SectorAI Frontend
+# MarketPulse AI Frontend
 
 Custom React dashboard built with Vite, Tailwind CSS, Recharts, and Lucide icons for NSE Sector Performance & Health Classification.
 

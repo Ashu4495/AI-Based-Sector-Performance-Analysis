@@ -8,6 +8,7 @@ pandas>=2.1.0
 numpy>=1.26.0,<3.0.0
 yfinance>=0.2.35
 pandas-ta>=0.3.14b0
+pyarrow>=15.0.0
 
 # Machine Learning & Explainability
 scikit-learn>=1.4.0

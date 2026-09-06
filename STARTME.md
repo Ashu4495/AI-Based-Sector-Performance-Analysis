@@ -1,6 +1,6 @@
-# Start SectorAI
+# Start MarketPulse AI
 
-Follow these steps to run the complete SectorAI application locally.
+Follow these steps to run the complete MarketPulse AI application locally.
 
 ## 1. Start the Backend API (FastAPI)
 Open a terminal in the root directory of the project and run the following command to start the backend server on port 8000:

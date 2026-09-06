@@ -117,7 +117,7 @@ export default function Landing({ sectors = [], onExplore, onSelectSector }) {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="border border-subtle rounded bg-surface p-6">
           <div className="max-w-2xl mb-6">
-            <h2 className="font-display text-xl font-bold text-primary">How SectorAI Evaluates a Sector</h2>
+            <h2 className="font-display text-xl font-bold text-primary">How MarketPulse AI Evaluates a Sector</h2>
             <p className="text-xs text-muted font-body mt-1">
               Ground truth technical indicators and relative strength metrics derived strictly from yfinance OHLCV data.
             </p>

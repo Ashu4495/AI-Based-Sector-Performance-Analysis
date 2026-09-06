@@ -27,7 +27,7 @@ export default function App() {
         setLoading(false);
       })
       .catch((err) => {
-        setError(err.message || 'Failed to fetch sectors from SectorAI backend');
+        setError(err.message || 'Failed to fetch sectors from MarketPulse AI backend');
         setLoading(false);
       });
   };
@@ -59,7 +59,7 @@ export default function App() {
         {loading ? (
           <div className="min-h-[60vh] flex flex-col items-center justify-center space-y-3">
             <RefreshCw className="w-8 h-8 text-brand animate-spin" />
-            <div className="font-mono text-xs text-muted">Connecting to SectorAI Engine...</div>
+            <div className="font-mono text-xs text-muted">Connecting to MarketPulse AI Engine...</div>
           </div>
         ) : error ? (
           <div className="max-w-2xl mx-auto px-4 py-16 text-center">
@@ -110,18 +110,22 @@ export default function App() {
 
       {/* Footer */}
       <footer className="w-full bg-surface border-t border-subtle py-6 mt-12 text-xs font-mono text-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <span className="font-display font-bold text-primary text-sm">SectorAI</span>
-            <span>· NSE Sector Health & Rotation MVP</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <div className="flex items-center gap-2">
+              <img src="/logo.png" alt="Logo" className="w-5 h-5 object-contain" />
+              <span className="font-display font-bold text-primary text-sm">MarketPluse AI</span>
+            </div>
+            <span className="hidden sm:inline text-subtle">|</span>
+            <span className="text-[10px] tracking-wide">SMART INSIGHTS • BETTER TRADES • BRIGHTER TOMORROW</span>
           </div>
-          <div className="flex items-center gap-4 text-[11px]">
+          <div className="flex items-center gap-4 text-[10px]">
             <span>Data: yfinance</span>
-            <span>Models: Ridge Regression + RandomForest + TreeSHAP</span>
-            <span>Labels Only (No Numeric Scores)</span>
+            <span className="hidden md:inline">Models: Ridge Regression + RandomForest + TreeSHAP</span>
           </div>
         </div>
       </footer>
     </div>
   );
 }
+

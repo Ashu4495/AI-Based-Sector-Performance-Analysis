@@ -1,5 +1,5 @@
 /**
- * SectorAI API Client.
+ * MarketPulse AI API Client.
  * Handles requests to FastAPI backend with proxy support and structured error handling.
  */
 

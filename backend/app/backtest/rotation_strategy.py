@@ -1,5 +1,5 @@
 """
-Sector Rotation Backtesting Module for SectorAI.
+Sector Rotation Backtesting Module for MarketPulse AI.
 Simulates a monthly sector rotation strategy based on model health labels
 and compares performance against the NIFTY 50 buy-and-hold benchmark.
 Computes CAGR, Sharpe Ratio, Max Drawdown, and monthly rebalancing logs.

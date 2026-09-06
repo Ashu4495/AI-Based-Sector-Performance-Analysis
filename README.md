@@ -1,6 +1,6 @@
-# SectorAI — AI-Driven NSE Sector Performance & Health Classification Dashboard
+# MarketPulse AI — AI-Driven NSE Sector Performance & Health Classification Dashboard
 
-SectorAI is an end-to-end AI-driven NSE sectoral index analysis, forecasting, and health classification dashboard with explainability and backtested sector rotation strategies.
+MarketPulse AI is an end-to-end AI-driven NSE sectoral index analysis, forecasting, and health classification dashboard with explainability and backtested sector rotation strategies.
 
 ## Overview
 - **Data Source**: `yfinance` exclusively for 8 NSE sectors + NIFTY 50 benchmark.

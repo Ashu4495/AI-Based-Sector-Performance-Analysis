@@ -1,5 +1,5 @@
 """
-Pydantic Schemas for SectorAI REST API.
+Pydantic Schemas for MarketPulse AI REST API.
 Defines strict response and data contracts.
 """
 

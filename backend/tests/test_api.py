@@ -1,5 +1,5 @@
 """
-Unit tests for SectorAI FastAPI endpoints.
+Unit tests for MarketPulse AI FastAPI endpoints.
 Tests all 5 core REST endpoints + input validation and error conditions.
 """
 
