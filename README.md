@@ -169,9 +169,23 @@ AI-Based-Sector-Performance-Analysis/
 
 # 13. REQUIREMENTS
 
-* Python 3.11.x
-* Node.js 18+ and `npm`
-* Internet connection (for `yfinance` data fetching)
+### System Requirements
+* **Python**: 3.11+
+* **Node.js**: 18.x or higher (with `npm`)
+* **Internet Connection**: Required to fetch live market data via `yfinance` API.
+
+### Core Backend Dependencies
+* **FastAPI & Uvicorn**: High-performance REST API framework and ASGI server.
+* **scikit-learn**: Machine learning models (Random Forest, Ridge Regression).
+* **SHAP**: TreeSHAP for model explainability and feature importance.
+* **Pandas & NumPy**: Data ingestion, manipulation, and numerical computations.
+* **yfinance**: Downloading historical NSE asset data.
+
+### Core Frontend Dependencies
+* **React**: Component-based UI rendering.
+* **Vite**: Ultra-fast frontend build tooling.
+* **Tailwind CSS**: Utility-first styling.
+* **Recharts**: Interactive historical and forecast data visualization.
 
 ---
 
