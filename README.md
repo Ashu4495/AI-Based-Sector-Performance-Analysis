@@ -48,14 +48,6 @@ Crucially, the solution integrates TreeSHAP to decode the model's logic, showing
 
 ---
 
-# 6. DEMO
-
-* 🌐 Live Demo: `Not provided`
-* 🎥 Demo Video: `Not provided`
-* 📸 Screenshots: `Not provided`
-
----
-
 # 7. SYSTEM ARCHITECTURE
 
 ```mermaid
@@ -133,12 +125,6 @@ flowchart TD
 | --------- | -----------: |
 | Mean Absolute Error (MAE) | 0.0244 (2.44%) |
 | Directional Accuracy | 54.77% |
-
----
-
-# 11. GENERATIVE AI / LLM SECTION
-
-`Not implemented` (This project relies strictly on traditional Machine Learning and statistical models).
 
 ---
 
@@ -309,111 +295,7 @@ All files are stored locally in the `backend/app/data/storage/` directory.
 
 ---
 
-# 20. SCREENSHOTS
-
-* `Not provided`
 
 ---
 
-# 21. TESTING
-
-The project utilizes `pytest` for backend unit and integration testing.
-
-```bash
-# Run all tests from the root directory
-pytest -v
-```
-
----
-
-# 22. SECURITY
-
-* **CORS**: Cross-Origin Resource Sharing is enabled in FastAPI (`CORSMiddleware`) to allow the React frontend to communicate with the API.
-* **Error Handling**: A global exception handler ensures internal stack traces are never leaked to the client, returning standardized 500 error messages instead.
-* **Authentication**: `Not implemented` (This is a public informational dashboard).
-
----
-
-# 23. PERFORMANCE
-
-* **Fast Startup**: The FastAPI `lifespan` context manager pre-loads all serialized ML model artifacts (`.pkl`/`.joblib`) and SHAP explainers into memory during startup. This eliminates cold-start penalties and ensures API responses are served in milliseconds.
-* **Statelessness**: The API is entirely stateless and can be horizontally scaled if deployed behind a load balancer.
-
----
-
-# 24. LIMITATIONS
-
-* **Dataset Constraints**: The models are currently trained exclusively on daily timeframe data (EOD) and are not suitable for intraday trading.
-* **Market Shocks**: Traditional technical indicators and historical regression models often fail to predict exogenous macro-economic shocks (e.g., sudden interest rate changes, geopolitical events).
-* **Latency**: Data is sourced from Yahoo Finance, which may have a slight delay compared to direct institutional exchange feeds.
-
----
-
-# 25. FUTURE ENHANCEMENTS
-
-* [ ] Add real-time intraday data streaming via WebSockets.
-* [ ] Incorporate Natural Language Processing (NLP) sentiment analysis on daily financial news for each sector.
-* [ ] Implement user authentication to allow users to save custom portfolios and watchlists.
-* [ ] Expand coverage to global indices (e.g., S&P 500 sectors).
-
----
-
-# 26. ROADMAP
-
-### Phase 1
-* Setup data ingestion pipeline and technical feature engineering.
-* Train initial baseline predictive models.
-
-### Phase 2 (Completed)
-* Develop React dashboard.
-* Integrate SHAP explainability into the API.
-* Finalize Sector Rotation backtesting engine.
-
-### Phase 3
-* Cloud deployment optimizations.
-* Addition of macroeconomic indicators to the feature store.
-
----
-
-# 27. CONTRIBUTING
-
-Contributions are welcome! If you'd like to improve the models, add new technical indicators, or enhance the dashboard:
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Make your changes and write tests if applicable.
-4. Ensure all tests pass by running `pytest`.
-5. Commit your changes: `git commit -m 'Add some feature'`
-6. Push the branch: `git push origin feature/your-feature-name`
-7. Open a Pull Request.
-
----
-
-# 28. LICENSE
-
-`License has not been specified.`
-
----
-
-# 29. AUTHOR
-
-**Ashu4495**
-* GitHub: [Ashu4495](https://github.com/Ashu4495)
-* LinkedIn: `Not provided`
-* Portfolio: `Not provided`
-* Email: `Not provided`
-
----
-
-# 30. ACKNOWLEDGEMENTS
-
-* Data provided by [Yahoo Finance](https://finance.yahoo.com/) via the `yfinance` library.
-* Machine learning modeling powered by [scikit-learn](https://scikit-learn.org/).
-* Model explainability driven by [SHAP (SHapley Additive exPlanations)](https://shap.readthedocs.io/).
-* Technical indicators computed using [pandas-ta](https://github.com/twopirllc/pandas-ta).
-
----
-
-# 31. SUPPORT
-
-If you find this project useful for your financial research or trading analysis, consider giving the repository a ⭐!
+*🚀 MarketPulse AI — Turning market data into actionable intelligence.* ✨
